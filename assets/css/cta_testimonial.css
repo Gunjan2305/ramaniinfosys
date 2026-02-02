@@ -302,3 +302,75 @@
         bottom: auto;
     }
 }
+
+@media (max-width: 768px) {
+    .ctat-container {
+        padding: 0 1rem;
+    }
+
+    .ctat-content-area {
+        min-height: auto;
+        flex-direction: column;
+        padding: 0 0 3rem 0;
+    }
+
+    .ctat-bg-image {
+        position: relative;
+        height: 250px;
+        width: 100%;
+        opacity: 0.8;
+        mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+        -webkit-mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+    }
+
+    .ctat-left-info {
+        position: relative;
+        top: auto;
+        left: auto;
+        padding: 2rem;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .ctat-reviews-title {
+        font-size: 2rem;
+    }
+
+    .ctat-stars {
+        margin-bottom: 1.5rem;
+    }
+
+    .ctat-card-container {
+        position: relative;
+        top: auto;
+        left: auto;
+        right: auto;
+        transform: none;
+        width: 90%;
+        margin: 0 auto;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    }
+
+    .ctat-banner {
+        padding: 2rem 1.5rem;
+    }
+
+    .ctat-banner h2 {
+        font-size: 1.5rem;
+    }
+
+    .btn-get-started {
+        width: 100%;
+        text-align: center;
+    }
+
+    .ctat-stats-row {
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        justify-content: center;
+    }
+
+    .ctat-stat {
+        text-align: center;
+    }
+}

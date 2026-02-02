@@ -130,6 +130,10 @@
 
 /* Responsive */
 @media (max-width: 768px) {
+    .faq-container {
+        padding: 0 1rem;
+    }
+
     .faq-title {
         font-size: 2rem;
     }

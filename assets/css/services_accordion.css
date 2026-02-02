@@ -260,3 +260,41 @@
         left: 20%;
     }
 }
+
+@media (max-width: 768px) {
+    .container-accordion {
+        width: 100%;
+        padding: 0 16px;
+    }
+
+    .accordion-title {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .accordion-header {
+        padding: 1rem 1.5rem;
+    }
+
+    .accordion-header span {
+        font-size: 20px;
+    }
+
+    .drawer-layout {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .drawer-text h3 {
+        font-size: 1.6rem;
+    }
+
+    .drawer-visual {
+        height: 250px;
+    }
+
+    .vc-main-img {
+        width: 70%;
+        left: 15%;
+    }
+}

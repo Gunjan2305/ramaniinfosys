@@ -323,6 +323,10 @@
 }
 
 @media (max-width: 600px) {
+    .footer-container {
+        padding: 0 1rem;
+    }
+
     .footer-main {
         grid-template-columns: 1fr;
     }

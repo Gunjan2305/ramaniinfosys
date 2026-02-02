@@ -172,6 +172,9 @@
 }
 
 @media (max-width: 600px) {
+    .partners-container {
+        padding: 0 1rem;
+    }
     .partners-grid {
         grid-template-columns: 1fr;
     }

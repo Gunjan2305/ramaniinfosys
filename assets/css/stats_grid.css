@@ -281,6 +281,7 @@
     .stats-container {
         grid-template-columns: 1fr;
         grid-template-rows: auto;
+        padding: 0 16px;
     }
 
     .clients-block {

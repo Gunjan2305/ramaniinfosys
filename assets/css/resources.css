@@ -82,6 +82,10 @@
 }
 
 @media (max-width: 600px) {
+    .resources-container {
+        padding: 0 1rem;
+    }
+
     .resources-grid {
         grid-template-columns: 1fr;
     }

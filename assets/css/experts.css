@@ -1,0 +1,252 @@
+/* Experts Section Styles */
+.experts-section {
+    padding: 50px 0;
+    background-color: #050505;
+    /* Slightly lighter/different than pure black to distinguish or match deep dark theme */
+    color: #fff;
+    overflow: hidden;
+    /* For any decorative elements */
+    position: relative;
+}
+
+.experts-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+/* Left Content */
+.experts-content {
+    max-width: 650px;
+}
+
+.experts-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 2rem;
+    background: linear-gradient(to right, #fff, #e0e0e0);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.experts-description p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #b0b0b0;
+    margin-bottom: 1.5rem;
+}
+
+.experts-description strong {
+    color: #fff;
+    font-weight: 600;
+}
+
+.btn-experts {
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    /* Skyblue Gradient */
+    color: #fff;
+    /* Changed to white for better contrast on blue */
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    margin-top: 2rem;
+    letter-spacing: 0.5px;
+}
+
+.btn-experts:hover {
+    background: linear-gradient(to right, #0072ff, #00c6ff);
+    /* Reverse gradient on hover */
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 114, 255, 0.4);
+}
+
+/* Right Visuals */
+.experts-visuals {
+    position: relative;
+    /* Create a framed look */
+    background: #111;
+    border-radius: 24px;
+    padding: 2rem;
+    border: 1px solid #222;
+    /* Inner shadow/glow */
+    box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.visual-grid {
+    display: grid;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+/* Abstract floating cards effect */
+.v-card {
+    position: absolute;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+    border: 1px solid #333;
+    transition: transform 0.5s ease;
+    background-color: #1a1a1a;
+}
+
+.v-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Central "Sales Chart" Card - Main Focus */
+.card-center {
+    width: 280px;
+    /* Height auto based on content */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    /* White bg as per image */
+    color: #000;
+    z-index: 10;
+    padding: 1.5rem;
+    text-align: left;
+}
+
+.card-center:hover {
+    transform: translate(-50%, -55%);
+    /* Slight lift */
+}
+
+/* Chart Mockup details */
+.chart-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.chart-title {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #666;
+}
+
+.chart-value {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #000;
+}
+
+.chart-growth {
+    color: #2ecc71;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-left: 0.5rem;
+}
+
+.chart-graph-placeholder {
+    height: 60px;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 25" preserveAspectRatio="none"><path d="M0,25 Q10,20 20,15 T40,10 T60,20 T80,5 T100,15" stroke="%233498db" stroke-width="2" fill="none"/></svg>');
+    background-size: cover;
+    margin-bottom: 1rem;
+    opacity: 0.8;
+}
+
+.chart-dates {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.7rem;
+    color: #999;
+    border-top: 1px solid #eee;
+    padding-top: 0.5rem;
+}
+
+/* Surrounding Cards */
+.card-tl {
+    /* Top Left */
+    width: 180px;
+    height: 120px;
+    top: 10%;
+    left: 5%;
+    z-index: 1;
+    opacity: 0.6;
+}
+
+.card-tr {
+    /* Top Right */
+    width: 180px;
+    height: 120px;
+    top: 5%;
+    right: 5%;
+    z-index: 1;
+    opacity: 0.6;
+}
+
+.card-bl {
+    /* Bottom Left */
+    width: 200px;
+    height: 140px;
+    bottom: 5%;
+    left: 2%;
+    z-index: 2;
+    opacity: 0.8;
+}
+
+.card-br {
+    /* Bottom Right */
+    width: 160px;
+    height: 200px;
+    /* Portrait */
+    bottom: 5%;
+    right: 8%;
+    z-index: 2;
+    opacity: 0.8;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .experts-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .experts-content {
+        max-width: 100%;
+        margin-bottom: 3rem;
+    }
+
+    .experts-visuals {
+        min-height: 400px;
+    }
+
+    .card-center {
+        width: 240px;
+    }
+}
+
+@media (max-width: 600px) {
+    .experts-title {
+        font-size: 2.5rem;
+    }
+
+    .card-tl,
+    .card-tr,
+    .card-bl,
+    .card-br {
+        display: none;
+        /* Simplify on mobile if too crowded */
+    }
+}

@@ -1,0 +1,309 @@
+/* Stats Grid Section */
+.stats-grid-section {
+    padding: 50px 0;
+    background-color: #080808;
+    /* Slightly lighter than pure black for contrast or just black */
+    color: #fff;
+    position: relative;
+    /* Animation Start */
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 1s ease-out;
+}
+
+.stats-grid-section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.stats-container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: 1.2fr 1.8fr;
+    /* Left block is slightly narrower or adaptable */
+    align-items: stretch;
+    gap: 1.5rem;
+}
+
+/* Common Card Styles */
+.stat-card {
+    background: #111;
+    border-radius: 20px;
+    padding: 2.5rem;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Left Large Block - Clients */
+.clients-block {
+    grid-column: 1 / 2;
+    /* grid-row removed */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #0a0a0a;
+    padding: 0;
+    height: 100%;
+}
+
+.clients-header {
+    padding: 1.5rem 2rem;
+    text-align: center;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.clients-header h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+    background: linear-gradient(to right, #fff, #aaa);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.clients-header p {
+    font-size: 1.1rem;
+    color: #a0a0a0;
+    margin-bottom: 3rem;
+}
+
+.clients-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+    /* Remove gap for borders */
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.client-item {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    min-height: 70px;
+
+    /* Animation Initial State */
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.6s ease-out;
+}
+
+.client-item.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Remove right border for every 3rd item */
+.client-item:nth-child(3n) {
+    border-right: none;
+}
+
+/* Optional: Handle bottom borders for last row if needed. 
+   Assuming 12 items (3x4), the last row will have bottom borders which is fine inside the card 
+   unless the card height is fixed. The overflow:hidden handles the corners. */
+
+.client-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.6;
+    transition: opacity 0.3s ease;
+    filter: grayscale(100%);
+}
+
+.client-logo:hover {
+    opacity: 1;
+    filter: grayscale(0%);
+}
+
+.client-logo img {
+    max-width: 100%;
+    height: auto;
+    max-height: 40px;
+}
+
+/* Text Fallback for Logos if images missing */
+/* Text Fallback for Logos if images missing */
+.client-text {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    width: 100%;
+}
+
+
+/* Right Side Area */
+.right-content-area {
+    grid-column: 2 / 3;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+/* Top Row of Right Side */
+.info-row {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 1.5rem;
+}
+
+.info-text-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section-label {
+    color: #00BFFF;
+    background: linear-gradient(90deg, #00BFFF, #8A2BE2);
+    /* Green */
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+    display: inline-block;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.info-text-card p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #d0d0d0;
+}
+
+/* Green Stats Card */
+.green-stat-card {
+    background: linear-gradient(90deg, #00BFFF, #8A2BE2);
+    /* Approx matching image lime green */
+    color: #000;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.green-stat-card .badge {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    /* Or center? Image shows top left ish? */
+    background: #000;
+    color: #fff;
+    padding: 0.4rem 1rem;
+    border-radius: 50px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    transform: rotate(-5deg);
+}
+
+.green-stat-card h3 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin: 1rem 0 0.5rem;
+}
+
+.green-stat-card p {
+    font-weight: 600;
+    font-size: 0.9rem;
+    max-width: 80%;
+}
+
+/* Bottom Row of Right Side - 3 Stats */
+.stats-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.mini-stat-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    min-height: 180px;
+}
+
+.stat-icon {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-bottom: 1rem;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.stat-icon svg {
+    width: 100%;
+    height: 100%;
+    fill: currentColor;
+}
+
+.mini-stat-card h4 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.mini-stat-card p {
+    font-size: 0.9rem;
+    color: #a0a0a0;
+    font-weight: 500;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .stats-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .clients-block {
+        grid-column: 1 / -1;
+        grid-row: auto;
+    }
+
+    .right-content-area {
+        grid-column: 1 / -1;
+    }
+}
+
+@media (max-width: 768px) {
+    .info-row {
+        grid-template-columns: 1fr;
+    }
+
+    .stats-row {
+        grid-template-columns: 1fr;
+        /* Stack them on mobile? Or scroll? 1fr 1fr? */
+    }
+
+    .clients-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

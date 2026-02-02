@@ -1,0 +1,304 @@
+/* CTA Testimonial Section */
+.cta-testimonial-section {
+    background-color: #000;
+    padding: 50px 0 50px 0;
+    font-family: 'Outfit', sans-serif;
+}
+
+.ctat-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* Rounded Top Banner */
+.ctat-banner {
+    background-color: #0a0a0a;
+    border-radius: 20px;
+    padding: 2.5rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #222;
+    margin-bottom: 2rem;
+}
+
+.ctat-banner h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+    line-height: 1.3;
+    max-width: 700px;
+}
+
+.btn-get-started {
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    /* Skyblue Gradient */
+    color: #fff;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: transform 0.3s ease, background 0.3s;
+    white-space: nowrap;
+}
+
+.btn-get-started:hover {
+    background: linear-gradient(to right, #0072ff, #00c6ff);
+    transform: scale(1.05);
+}
+
+/* Main Content Area with Background Image */
+.ctat-content-area {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    background-color: #111;
+}
+
+.ctat-bg-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.6;
+    mask-image: linear-gradient(to right, black 60%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to right, black 60%, transparent 100%);
+}
+
+.ctat-left-info {
+    position: absolute;
+    left: 3rem;
+    bottom: 3rem;
+    z-index: 2;
+    max-width: 300px;
+}
+
+.ctat-reviews-title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 0.5rem;
+}
+
+.ctat-stars {
+    color: #fff;
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+    display: inline-block;
+}
+
+.ctat-small-text {
+    font-size: 0.8rem;
+    color: #ccc;
+    line-height: 1.5;
+}
+
+/* Floating White Card */
+.ctat-card-container {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 60%;
+    height: 80%;
+    background: #fff;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    display: flex;
+    padding: 3rem;
+    box-shadow: -20px 20px 50px rgba(0, 0, 0, 0.5);
+    z-index: 5;
+    overflow: hidden;
+    /* Hide overflow for phone pop-out if desired, or let it pop out */
+}
+
+/* Adjust if phone needs to pop out */
+.ctat-card-container {
+    overflow: visible;
+}
+
+.ctat-card-content {
+    flex: 1;
+    padding-right: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.ctat-user-profile {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.ctat-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.ctat-user-info h4 {
+    color: #000;
+    font-weight: 700;
+    margin: 0;
+}
+
+.ctat-testimonial-text {
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    font-style: italic;
+}
+
+.ctat-stats-row {
+    display: flex;
+    gap: 3rem;
+    border-top: 1px solid #eee;
+    padding-top: 1.5rem;
+}
+
+.ctat-stat h3 {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #000;
+    margin-bottom: 0.3rem;
+}
+
+.ctat-stat p {
+    font-size: 0.9rem;
+    color: #666;
+    font-weight: 500;
+}
+
+.ctat-phone-visual {
+    flex: 1;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ctat-phone-visual img {
+    max-width: 140%;
+    /* Make it large and pop out */
+    transform: rotate(-5deg) translateX(20px);
+    filter: drop-shadow(20px 30px 40px rgba(0, 0, 0, 0.2));
+}
+
+/* Bottom Ticker Strip */
+.ctat-ticker-strip {
+    background: #111;
+    padding: 1rem 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2rem;
+    border-radius: 10px;
+}
+
+.ctat-ticker-label {
+    background-color: #111;
+    /* Mask scrolling text */
+    padding-left: 2rem;
+    padding-right: 2rem;
+    /* Add padding right to cover tick */
+    z-index: 10;
+    position: relative;
+    white-space: nowrap;
+    display: flex;
+    /* alignment */
+    align-items: center;
+}
+
+.ctat-ticker-label span {
+    /* Gradient Color Text */
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: 700;
+}
+
+.ctat-ticker-track {
+    display: flex;
+    gap: 3rem;
+    animation: scrollInfo 25s linear infinite;
+    white-space: nowrap;
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.ctat-ticker-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.ctat-ticker-item::after {
+    content: '*';
+    color: #666;
+    margin-left: 3rem;
+}
+
+@keyframes scrollInfo {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .ctat-banner {
+        flex-direction: column;
+        gap: 1.5rem;
+        text-align: center;
+    }
+
+    .ctat-card-container {
+        width: 90%;
+        left: 5%;
+        height: auto;
+        padding: 2rem;
+        flex-direction: column-reverse;
+        /* Phone on top or bottom */
+    }
+
+    .ctat-phone-visual img {
+        max-width: 80%;
+        transform: none;
+        margin-bottom: 2rem;
+    }
+
+    .ctat-bg-image {
+        width: 100%;
+        mask-image: none;
+        -webkit-mask-image: none;
+    }
+
+    .ctat-content-area {
+        height: auto;
+        min-height: 900px;
+        /* Make room */
+    }
+
+    .ctat-left-info {
+        top: 2rem;
+        left: 2rem;
+        bottom: auto;
+    }
+}

@@ -32,6 +32,13 @@
 
     <header class="sticky-header">
         <div class="container">
+            <!-- Hamburger Button (Moved to Start) -->
+            <button class="mobile-menu-btn" aria-label="Toggle Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
             <div class="logo">
                 <a href="index.php">
                     <img src="assets/img/logo.jpeg" alt="Ramani Infosys Logo">
@@ -53,6 +60,21 @@
             </div>
         </div>
     </header>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-nav-overlay"></div>
+    <div class="mobile-nav-drawer">
+        <ul class="mobile-nav-list">
+            <li><a href="services.php">Services</a></li>
+            <li><a href="#">Our Work</a></li>
+            <li><a href="#">Who we are</a></li>
+            <li><a href="#">Resources</a></li>
+        </ul>
+        <div class="mobile-cta-actions">
+            <a href="#" class="btn btn-outline" style="width: 100%; text-align: center;">Get A Free Audit</a>
+            <a href="#" class="btn btn-primary" style="width: 100%; text-align: center;">Get in Touch</a>
+        </div>
+    </div>
 
     <!-- Hero Section -->
     <section class="hero-section">
@@ -1193,6 +1215,28 @@
                 }
             });
         });
+        // Mobile Menu Logic
+        const mobileBtn = document.querySelector('.mobile-menu-btn');
+        const mobileDrawer = document.querySelector('.mobile-nav-drawer');
+        const mobileOverlay = document.querySelector('.mobile-nav-overlay');
+
+        if (mobileBtn) {
+            mobileBtn.addEventListener('click', () => {
+                mobileBtn.classList.toggle('active');
+                mobileDrawer.classList.toggle('active');
+                mobileOverlay.classList.toggle('active');
+                document.body.style.overflow = mobileDrawer.classList.contains('active') ? 'hidden' : ''; // Prevent background scroll
+            });
+        }
+
+        if (mobileOverlay) {
+            mobileOverlay.addEventListener('click', () => {
+                mobileBtn.classList.remove('active');
+                mobileDrawer.classList.remove('active');
+                mobileOverlay.classList.remove('active');
+                document.body.style.overflow = '';
+            });
+        }
     </script>
 </body>
 

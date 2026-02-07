@@ -4,89 +4,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - Ramani Infosys</title>
+    <title>Our Work - Ramani Infosys</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/lines.css">
+    <link rel="stylesheet" href="assets/css/slider.css">
+    <link rel="stylesheet" href="assets/css/case_study.css">
+    <link rel="stylesheet" href="assets/css/services_accordion.css">
+    <link rel="stylesheet" href="assets/css/stats_grid.css">
+    <link rel="stylesheet" href="assets/css/partners.css">
+    <link rel="stylesheet" href="assets/css/experts.css">
+    <link rel="stylesheet" href="assets/css/resources.css">
+    <link rel="stylesheet" href="assets/css/faq.css">
+    <link rel="stylesheet" href="assets/css/cta_testimonial.css">
     <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/our-work.css">
 
     <link rel="icon" type="image/jpeg" href="assets/img/favicon.jpeg">
     <link rel="shortcut icon" type="image/jpeg" href="assets/img/favicon.jpeg">
-
-    <!-- Google Fonts -->
+    <!-- Google Fonts for premium look -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-    <style>
-        body {
-            background-color: #050505;
-            color: #fff;
-            font-family: 'Outfit', sans-serif;
-        }
-
-        .page-header {
-            padding: 7rem 0 1rem;
-            text-align: center;
-            background: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, #050505 100%);
-            position: relative;
-        }
-
-        .page-header h1 {
-            font-size: 3.5rem;
-            font-weight: 700;
-            margin-bottom: 1.5rem;
-            background: linear-gradient(to right, #fff, #aaa);
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
-        }
-
-        .privacy-content {
-            max-width: 900px;
-            margin: 0 auto 6rem;
-            padding: 0 2rem;
-            line-height: 1.8;
-            color: #ccc;
-        }
-
-        .privacy-content h2 {
-            font-size: 1.8rem;
-            color: #fff;
-            margin: 3rem 0 1.5rem;
-            border-left: 4px solid #00c6ff;
-            padding-left: 1rem;
-        }
-
-        .privacy-content p {
-            margin-bottom: 1.5rem;
-            font-size: 1.05rem;
-        }
-
-        .privacy-content ul {
-            margin-bottom: 1.5rem;
-            padding-left: 1.5rem;
-        }
-
-        .privacy-content li {
-            margin-bottom: 0.5rem;
-        }
-
-        .last-updated {
-            display: inline-block;
-            margin-bottom: 2rem;
-            padding: 0.5rem 1.5rem;
-            border: 1px solid #333;
-            border-radius: 50px;
-            font-size: 0.9rem;
-            color: #888;
-        }
-    </style>
 </head>
 
 <body>
 
     <header class="sticky-header">
         <div class="container">
+            <!-- Hamburger Button -->
+            <button class="mobile-menu-btn" aria-label="Toggle Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
             <div class="logo">
                 <a href="index.php">
                     <img src="assets/img/logo.jpeg" alt="Ramani Infosys Logo">
@@ -95,8 +46,9 @@
 
             <nav class="nav-menu">
                 <ul>
-                    <li><a href="index.php#services">Services</a></li>
-                    <li><a href="our-work.php">Our Work</a></li>
+                    <li><a href="services.php">Services</a></li>
+                    <li><a href="our-work.php" class="active" style="color: var(--primary-color); font-weight: 600;">Our
+                            Work</a></li>
                     <li><a href="who-we-are.php">Who we are</a></li>
                     <li><a href="portfolio.php">Portfolio</a></li>
                 </ul>
@@ -109,68 +61,151 @@
         </div>
     </header>
 
-    <div class="page-header">
-        <div class="container">
-            <h1>Privacy Policy</h1>
-            <span class="last-updated">Last Updated: October 2025</span>
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-nav-overlay"></div>
+    <div class="mobile-nav-drawer">
+        <ul class="mobile-nav-list">
+            <li><a href="services.php">Services</a></li>
+            <li><a href="our-work.php" class="active">Our Work</a></li>
+            <li><a href="who-we-are.php">Who we are</a></li>
+            <li><a href="portfolio.php">Portfolio</a></li>
+        </ul>
+        <div class="mobile-cta-actions">
+            <a href="#" class="btn btn-outline" style="width: 100%; text-align: center;">Get A Free Audit</a>
+            <a href="#" class="btn btn-primary" style="width: 100%; text-align: center;">Get in Touch</a>
         </div>
     </div>
 
-    <div class="privacy-content">
-        <p>At Ramani Infosys ("we," "our," or "us"), we are committed to protecting your privacy to ensure that you can
-            continue to trust us with your personal data. This Privacy Policy describes how we collect, use, and
-            disclose information when you visit our website or use our services.</p>
+    <!-- Our Work Page Content -->
+    <section class="work-page-header">
+        <div class="container">
+            <h1 class="work-page-title">Recent Work</h1>
+            <p class="work-page-subtitle">We partner with enterprise brands to build scalable, high-performance web
+                applications. Here are some of our success stories.</p>
+        </div>
+    </section>
 
-        <h2>1. Information We Collect</h2>
-        <p>We may collect personal identification information from Users in a variety of ways, including, but not
-            limited to, when Users visit our site, register on the site, subscribe to the newsletter, and in connection
-            with other activities, services, features or resources we make available on our Site.</p>
-        <ul>
-            <li>Name and Contact Data: We collect your name, email address, postal address, phone number, and other
-                similar contact data.</li>
-            <li>Credentials: We collect passwords, password hints, and similar security information used for
-                authentication and account access.</li>
-            <li>Demographic Data: We collect data about you such as your age, gender, country, and preferred language.
-            </li>
-        </ul>
+    <section class="work-grid-section">
+        <div class="work-grid">
+            <!-- Project 1 -->
+            <div class="work-card">
+                <div class="work-media">
+                    <img src="assets/img/success-brand -1.jpeg" alt="Global Retail Platform">
+                </div>
+                <div class="work-overlay">
+                    <div class="work-info">
+                        <div class="work-tags">
+                            <span class="work-tag">E-Commerce</span>
+                            <span class="work-tag">Angular</span>
+                        </div>
+                        <h3>Global Retail Platform</h3>
+                        <p class="work-desc">A scalable retail platform serving millions of customers worldwide with
+                            real-time inventory management.</p>
+                    </div>
+                    <a href="#" class="btn-work">View Case Study</a>
+                </div>
+            </div>
 
-        <h2>2. How We Use Your Information</h2>
-        <p>We use the information we collect to operate our business and provide you the services we offer. This
-            includes using data to improve our products and personalize your experiences. We also may use the data to
-            communicate with you, for example, informing you about your account, security updates and product
-            information.</p>
-        <p>We do not share your personal data with your consent or as necessary to complete any transaction or provide
-            any service you have requested or authorized.</p>
+            <!-- Project 2 -->
+            <div class="work-card">
+                <div class="work-media">
+                    <img src="assets/img/success-brand -2.jpeg" alt="Secure Banking App">
+                </div>
+                <div class="work-overlay">
+                    <div class="work-info">
+                        <div class="work-tags">
+                            <span class="work-tag">FinTech</span>
+                            <span class="work-tag">.NET Core</span>
+                        </div>
+                        <h3>Secure Banking App</h3>
+                        <p class="work-desc">High-security banking application with biometric authentication and
+                            fraudulent transaction detection.</p>
+                    </div>
+                    <a href="#" class="btn-work">View Case Study</a>
+                </div>
+            </div>
 
-        <h2>3. Data Protection</h2>
-        <p>We adopt appropriate data collection, storage and processing practices and security measures to protect
-            against unauthorized access, alteration, disclosure or destruction of your personal information, username,
-            password, transaction information and data stored on our Site.</p>
+            <!-- Project 3 -->
+            <div class="work-card">
+                <div class="work-media">
+                    <img src="assets/img/success-brand-3.jpeg" alt="Patient Care System">
+                </div>
+                <div class="work-overlay">
+                    <div class="work-info">
+                        <div class="work-tags">
+                            <span class="work-tag">Healthcare</span>
+                            <span class="work-tag">Azure</span>
+                        </div>
+                        <h3>Patient Care System</h3>
+                        <p class="work-desc">Cloud-based patient management system improving communication between
+                            doctors and patients.</p>
+                    </div>
+                    <a href="#" class="btn-work">View Case Study</a>
+                </div>
+            </div>
 
-        <h2>4. Third Party Websites</h2>
-        <p>Users may find advertising or other content on our Site that link to the sites and services of our partners,
-            suppliers, advertisers, sponsors, licensors and other third parties. We do not control the content or links
-            that appear on these sites and are not responsible for the practices employed by websites linked to or from
-            our Site.</p>
+            <!-- Project 4 (Duplicate/Variation) -->
+            <div class="work-card">
+                <div class="work-media">
+                    <img src="assets/img/image2.webp" alt="Lifestyle Brand">
+                </div>
+                <div class="work-overlay">
+                    <div class="work-info">
+                        <div class="work-tags">
+                            <span class="work-tag">Shopify Plus</span>
+                            <span class="work-tag">Design</span>
+                        </div>
+                        <h3>Luxury Lifestyle Brand</h3>
+                        <p class="work-desc">Custom Shopify Plus experience for a high-end fashion retailer with
+                            immersive visuals.</p>
+                    </div>
+                    <a href="#" class="btn-work">View Case Study</a>
+                </div>
+            </div>
 
-        <h2>5. Changes to This Privacy Policy</h2>
-        <p>Ramani Infosys has the discretion to update this privacy policy at any time. When we do, we will post a
-            notification on the main page of our Site or send you an email. We encourage Users to frequently check this
-            page for any changes to stay informed about how we are helping to protect the personal information we
-            collect.</p>
+            <!-- Project 5 -->
+            <div class="work-card">
+                <div class="work-media">
+                    <img src="assets/img/image-1.webp" alt="SaaS Dashboard">
+                </div>
+                <div class="work-overlay">
+                    <div class="work-info">
+                        <div class="work-tags">
+                            <span class="work-tag">SaaS</span>
+                            <span class="work-tag">React</span>
+                        </div>
+                        <h3>Analytics Dashboard</h3>
+                        <p class="work-desc">Real-time analytics dashboard for marketing agencies to track campaign
+                            performance.</p>
+                    </div>
+                    <a href="#" class="btn-work">View Case Study</a>
+                </div>
+            </div>
 
-        <h2>6. Contact Us</h2>
-        <p>If you have any questions about this Privacy Policy, the practices of this site, or your dealings with this
-            site, please contact us at:</p>
-        <p>
-            <strong>Ramani Infosys</strong><br>
-            A-306, RJD Business Hub, Katargam,<br>
-            Surat, 395004<br>
-            Email: hello@ramaniinfosys.com
-        </p>
-    </div>
+            <!-- Project 6 -->
+            <div class="work-card">
+                <div class="work-media">
+                    <video autoplay muted loop playsinline>
+                        <source src="assets/video/banner-video.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="work-overlay">
+                    <div class="work-info">
+                        <div class="work-tags">
+                            <span class="work-tag">Digital Experience</span>
+                            <span class="work-tag">Motion</span>
+                        </div>
+                        <h3>Immersive Campaign</h3>
+                        <p class="work-desc">Award-winning digital campaign featuring interactive video and motion
+                            graphics.</p>
+                    </div>
+                    <a href="#" class="btn-work">View Case Study</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <!-- Footer Include -->
+    <!-- Footer -->
     <footer class="site-footer">
         <div class="footer-container">
             <!-- 1. Header CTA -->
@@ -272,7 +307,7 @@
                 <div class="footer-col footer-col-wrapper">
                     <h4>Ramani Insights</h4>
                     <ul class="footer-links">
-                        <li><a href="#">Explore Services</a></li>
+                        <li><a href="services.php">Explore Services</a></li>
                         <li><a href="our-work.php">Our Work</a></li>
                         <li><a href="who-we-are.php">Who we are</a></li>
                         <li><a href="portfolio.php">Portfolio</a></li>
@@ -325,6 +360,45 @@
             </div>
         </div>
     </footer>
+
+    <!-- Footer End -->
+
+    <script>
+        // Force page to start at the top on reload
+        if (history.scrollRestoration) {
+            history.scrollRestoration = 'manual';
+        } else {
+            window.onbeforeunload = function () {
+                window.scrollTo(0, 0);
+            }
+        }
+        window.onload = function () {
+            window.scrollTo(0, 0);
+        }
+
+        // Mobile Menu Logic
+        const mobileBtn = document.querySelector('.mobile-menu-btn');
+        const mobileDrawer = document.querySelector('.mobile-nav-drawer');
+        const mobileOverlay = document.querySelector('.mobile-nav-overlay');
+
+        if (mobileBtn) {
+            mobileBtn.addEventListener('click', () => {
+                mobileBtn.classList.toggle('active');
+                mobileDrawer.classList.toggle('active');
+                mobileOverlay.classList.toggle('active');
+                document.body.style.overflow = mobileDrawer.classList.contains('active') ? 'hidden' : ''; // Prevent background scroll
+            });
+        }
+
+        if (mobileOverlay) {
+            mobileOverlay.addEventListener('click', () => {
+                mobileBtn.classList.remove('active');
+                mobileDrawer.classList.remove('active');
+                mobileOverlay.classList.remove('active');
+                document.body.style.overflow = '';
+            });
+        }
+    </script>
 </body>
 
 </html>

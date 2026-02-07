@@ -50,9 +50,9 @@
                 <ul>
                     <li><a href="services.php" class="active"
                             style="color: var(--primary-color); font-weight: 600;">Services</a></li>
-                    <li><a href="#">Our Work</a></li>
-                    <li><a href="#">Who we are</a></li>
-                    <li><a href="#">Resources</a></li>
+                    <li><a href="our-work.php">Our Work</a></li>
+                    <li><a href="who-we-are.php">Who we are</a></li>
+                    <li><a href="portfolio.php">Portfolio</a></li>
                 </ul>
             </nav>
 
@@ -68,9 +68,9 @@
     <div class="mobile-nav-drawer">
         <ul class="mobile-nav-list">
             <li><a href="services.php" class="active">Services</a></li>
-            <li><a href="#">Our Work</a></li>
-            <li><a href="#">Who we are</a></li>
-            <li><a href="#">Resources</a></li>
+            <li><a href="our-work.php">Our Work</a></li>
+            <li><a href="who-we-are.php">Who we are</a></li>
+            <li><a href="portfolio.php">Portfolio</a></li>
         </ul>
         <div class="mobile-cta-actions">
             <a href="#" class="btn btn-outline" style="width: 100%; text-align: center;">Get A Free Audit</a>
@@ -428,9 +428,9 @@
                     <h4>Ramani Insights</h4>
                     <ul class="footer-links">
                         <li><a href="services.php">Explore Services</a></li>
-                        <li><a href="#">Our Work</a></li>
-                        <li><a href="#">Who we are</a></li>
-                        <li><a href="#">Get a Free Audit</a></li>
+                        <li><a href="our-work.php">Our Work</a></li>
+                        <li><a href="who-we-are.php">Who we are</a></li>
+                        <li><a href="portfolio.php">Portfolio</a></li>
                         <li><a href="#">Get In Touch</a></li>
                         <li><a href="#">Book a call</a></li>
                     </ul>

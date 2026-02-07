@@ -4,89 +4,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - Ramani Infosys</title>
+    <title>Portfolio - Ramani Infosys</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/lines.css">
     <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/portfolio.css">
 
     <link rel="icon" type="image/jpeg" href="assets/img/favicon.jpeg">
     <link rel="shortcut icon" type="image/jpeg" href="assets/img/favicon.jpeg">
-
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-    <style>
-        body {
-            background-color: #050505;
-            color: #fff;
-            font-family: 'Outfit', sans-serif;
-        }
-
-        .page-header {
-            padding: 7rem 0 1rem;
-            text-align: center;
-            background: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, #050505 100%);
-            position: relative;
-        }
-
-        .page-header h1 {
-            font-size: 3.5rem;
-            font-weight: 700;
-            margin-bottom: 1.5rem;
-            background: linear-gradient(to right, #fff, #aaa);
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
-        }
-
-        .privacy-content {
-            max-width: 900px;
-            margin: 0 auto 6rem;
-            padding: 0 2rem;
-            line-height: 1.8;
-            color: #ccc;
-        }
-
-        .privacy-content h2 {
-            font-size: 1.8rem;
-            color: #fff;
-            margin: 3rem 0 1.5rem;
-            border-left: 4px solid #00c6ff;
-            padding-left: 1rem;
-        }
-
-        .privacy-content p {
-            margin-bottom: 1.5rem;
-            font-size: 1.05rem;
-        }
-
-        .privacy-content ul {
-            margin-bottom: 1.5rem;
-            padding-left: 1.5rem;
-        }
-
-        .privacy-content li {
-            margin-bottom: 0.5rem;
-        }
-
-        .last-updated {
-            display: inline-block;
-            margin-bottom: 2rem;
-            padding: 0.5rem 1.5rem;
-            border: 1px solid #333;
-            border-radius: 50px;
-            font-size: 0.9rem;
-            color: #888;
-        }
-    </style>
 </head>
 
 <body>
 
     <header class="sticky-header">
         <div class="container">
+            <!-- Hamburger Button -->
+            <button class="mobile-menu-btn" aria-label="Toggle Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
             <div class="logo">
                 <a href="index.php">
                     <img src="assets/img/logo.jpeg" alt="Ramani Infosys Logo">
@@ -95,10 +37,11 @@
 
             <nav class="nav-menu">
                 <ul>
-                    <li><a href="index.php#services">Services</a></li>
+                    <li><a href="services.php">Services</a></li>
                     <li><a href="our-work.php">Our Work</a></li>
                     <li><a href="who-we-are.php">Who we are</a></li>
-                    <li><a href="portfolio.php">Portfolio</a></li>
+                    <li><a href="portfolio.php" class="active"
+                            style="color: var(--primary-color); font-weight: 600;">Portfolio</a></li>
                 </ul>
             </nav>
 
@@ -109,74 +52,107 @@
         </div>
     </header>
 
-    <div class="page-header">
-        <div class="container">
-            <h1>Privacy Policy</h1>
-            <span class="last-updated">Last Updated: October 2025</span>
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-nav-overlay"></div>
+    <div class="mobile-nav-drawer">
+        <ul class="mobile-nav-list">
+            <li><a href="services.php">Services</a></li>
+            <li><a href="our-work.php">Our Work</a></li>
+            <li><a href="who-we-are.php">Who we are</a></li>
+            <li><a href="portfolio.php" class="active">Portfolio</a></li>
+        </ul>
+        <div class="mobile-cta-actions">
+            <a href="#" class="btn btn-outline" style="width: 100%; text-align: center;">Get A Free Audit</a>
+            <a href="#" class="btn btn-primary" style="width: 100%; text-align: center;">Get in Touch</a>
         </div>
     </div>
 
-    <div class="privacy-content">
-        <p>At Ramani Infosys ("we," "our," or "us"), we are committed to protecting your privacy to ensure that you can
-            continue to trust us with your personal data. This Privacy Policy describes how we collect, use, and
-            disclose information when you visit our website or use our services.</p>
+    <!-- Portfolio Header -->
+    <section class="portfolio-header">
+        <div class="container">
+            <h1>Our Portfolio</h1>
+            <p>A curated showcase of our finest work across e-commerce, web development, and digital design.</p>
+        </div>
+    </section>
 
-        <h2>1. Information We Collect</h2>
-        <p>We may collect personal identification information from Users in a variety of ways, including, but not
-            limited to, when Users visit our site, register on the site, subscribe to the newsletter, and in connection
-            with other activities, services, features or resources we make available on our Site.</p>
-        <ul>
-            <li>Name and Contact Data: We collect your name, email address, postal address, phone number, and other
-                similar contact data.</li>
-            <li>Credentials: We collect passwords, password hints, and similar security information used for
-                authentication and account access.</li>
-            <li>Demographic Data: We collect data about you such as your age, gender, country, and preferred language.
-            </li>
-        </ul>
+    <!-- Filters -->
+    <section class="portfolio-content">
+        <div class="container">
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="shopify">Shopify</button>
+                <button class="filter-btn" data-filter="dotnet">.NET / Angular</button>
+                <button class="filter-btn" data-filter="design">Design</button>
+            </div>
 
-        <h2>2. How We Use Your Information</h2>
-        <p>We use the information we collect to operate our business and provide you the services we offer. This
-            includes using data to improve our products and personalize your experiences. We also may use the data to
-            communicate with you, for example, informing you about your account, security updates and product
-            information.</p>
-        <p>We do not share your personal data with your consent or as necessary to complete any transaction or provide
-            any service you have requested or authorized.</p>
+            <div class="portfolio-grid">
+                <!-- Item 1: Shopify -->
+                <div class="portfolio-item Shopify" data-category="shopify">
+                    <img src="assets/img/image2.webp" alt="Shopify Store" class="portfolio-thumb">
+                    <div class="portfolio-overlay">
+                        <span class="portfolio-cat">Shopify</span>
+                        <h3 class="portfolio-title">Sustainable Fashion</h3>
+                    </div>
+                </div>
 
-        <h2>3. Data Protection</h2>
-        <p>We adopt appropriate data collection, storage and processing practices and security measures to protect
-            against unauthorized access, alteration, disclosure or destruction of your personal information, username,
-            password, transaction information and data stored on our Site.</p>
+                <!-- Item 2: .NET -->
+                <div class="portfolio-item DotNet" data-category="dotnet">
+                    <img src="assets/img/success-brand -1.jpeg" alt=".NET App" class="portfolio-thumb">
+                    <div class="portfolio-overlay">
+                        <span class="portfolio-cat">.NET Core</span>
+                        <h3 class="portfolio-title">Fintech Dashboard</h3>
+                    </div>
+                </div>
 
-        <h2>4. Third Party Websites</h2>
-        <p>Users may find advertising or other content on our Site that link to the sites and services of our partners,
-            suppliers, advertisers, sponsors, licensors and other third parties. We do not control the content or links
-            that appear on these sites and are not responsible for the practices employed by websites linked to or from
-            our Site.</p>
+                <!-- Item 3: Design -->
+                <div class="portfolio-item Design" data-category="design">
+                    <img src="assets/img/image-1.webp" alt="Design UI" class="portfolio-thumb">
+                    <div class="portfolio-overlay">
+                        <span class="portfolio-cat">UI/UX Design</span>
+                        <h3 class="portfolio-title">SaaS Landing Page</h3>
+                    </div>
+                </div>
 
-        <h2>5. Changes to This Privacy Policy</h2>
-        <p>Ramani Infosys has the discretion to update this privacy policy at any time. When we do, we will post a
-            notification on the main page of our Site or send you an email. We encourage Users to frequently check this
-            page for any changes to stay informed about how we are helping to protect the personal information we
-            collect.</p>
+                <!-- Item 4: Shopify -->
+                <div class="portfolio-item Shopify" data-category="shopify">
+                    <img src="assets/img/success-brand -2.jpeg" alt="Shopify Plus" class="portfolio-thumb">
+                    <div class="portfolio-overlay">
+                        <span class="portfolio-cat">Shopify Plus</span>
+                        <h3 class="portfolio-title">Global Retailer</h3>
+                    </div>
+                </div>
 
-        <h2>6. Contact Us</h2>
-        <p>If you have any questions about this Privacy Policy, the practices of this site, or your dealings with this
-            site, please contact us at:</p>
-        <p>
-            <strong>Ramani Infosys</strong><br>
-            A-306, RJD Business Hub, Katargam,<br>
-            Surat, 395004<br>
-            Email: hello@ramaniinfosys.com
-        </p>
-    </div>
+                <!-- Item 5: Angular -->
+                <div class="portfolio-item DotNet" data-category="dotnet">
+                    <img src="assets/img/success-brand-3.jpeg" alt="Angular App" class="portfolio-thumb">
+                    <div class="portfolio-overlay">
+                        <span class="portfolio-cat">Angular</span>
+                        <h3 class="portfolio-title">Healthcare Portal</h3>
+                    </div>
+                </div>
 
-    <!-- Footer Include -->
+                <!-- Item 6: Motion -->
+                <div class="portfolio-item Design" data-category="design">
+                    <video autoplay muted loop playsinline class="portfolio-thumb"
+                        style="object-fit: cover; width: 100%; height: 100%;">
+                        <source src="assets/video/banner-video.mp4" type="video/mp4">
+                    </video>
+                    <div class="portfolio-overlay">
+                        <span class="portfolio-cat">Motion Design</span>
+                        <h3 class="portfolio-title">Interactive Campaign</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer class="site-footer">
         <div class="footer-container">
             <!-- 1. Header CTA -->
             <div class="footer-cta-bar">
                 <div class="footer-cta-text">
-                    <h2>230+ brands, $3.5B+ in sales.<br><span>You could be next!</span></h2>
+                    <h2>Ready to launch your project?<br><span>Start with us.</span></h2>
                 </div>
                 <a href="#" class="btn-footer-cta">Get In Touch</a>
             </div>
@@ -272,7 +248,7 @@
                 <div class="footer-col footer-col-wrapper">
                     <h4>Ramani Insights</h4>
                     <ul class="footer-links">
-                        <li><a href="#">Explore Services</a></li>
+                        <li><a href="services.php">Explore Services</a></li>
                         <li><a href="our-work.php">Our Work</a></li>
                         <li><a href="who-we-are.php">Who we are</a></li>
                         <li><a href="portfolio.php">Portfolio</a></li>
@@ -303,7 +279,6 @@
                 </div>
                 <div class="fps-marquee">
                     <div class="fps-track">
-                        <!-- Repeating these 4 times to ensure seamless loop -->
                         <img src="assets/img/footer_ticker_logos.png" alt="Partners">
                         <img src="assets/img/footer_ticker_logos.png" alt="Partners">
                         <img src="assets/img/footer_ticker_logos.png" alt="Partners">
@@ -325,6 +300,75 @@
             </div>
         </div>
     </footer>
+
+    <!-- Footer End -->
+
+    <script>
+        // Force page to start at the top on reload
+        if (history.scrollRestoration) {
+            history.scrollRestoration = 'manual';
+        } else {
+            window.onbeforeunload = function () {
+                window.scrollTo(0, 0);
+            }
+        }
+        window.onload = function () {
+            window.scrollTo(0, 0);
+        }
+
+        // Mobile Menu Logic
+        const mobileBtn = document.querySelector('.mobile-menu-btn');
+        const mobileDrawer = document.querySelector('.mobile-nav-drawer');
+        const mobileOverlay = document.querySelector('.mobile-nav-overlay');
+
+        if (mobileBtn) {
+            mobileBtn.addEventListener('click', () => {
+                mobileBtn.classList.toggle('active');
+                mobileDrawer.classList.toggle('active');
+                mobileOverlay.classList.toggle('active');
+                document.body.style.overflow = mobileDrawer.classList.contains('active') ? 'hidden' : ''; // Prevent background scroll
+            });
+        }
+
+        if (mobileOverlay) {
+            mobileOverlay.addEventListener('click', () => {
+                mobileBtn.classList.remove('active');
+                mobileDrawer.classList.remove('active');
+                mobileOverlay.classList.remove('active');
+                document.body.style.overflow = '';
+            });
+        }
+
+        // Filter Logic
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const items = document.querySelectorAll('.portfolio-item');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Active class
+                filterBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+
+                const filter = btn.getAttribute('data-filter');
+
+                items.forEach(item => {
+                    if (filter === 'all' || item.getAttribute('data-category') === filter) {
+                        item.style.display = 'block';
+                        // Add fade in animation if desired
+                        item.style.opacity = '0';
+                        setTimeout(() => item.style.opacity = '1', 50);
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Add opacity transition to items for filter effect
+        items.forEach(item => {
+            item.style.transition = 'opacity 0.3s ease';
+        });
+    </script>
 </body>
 
 </html>

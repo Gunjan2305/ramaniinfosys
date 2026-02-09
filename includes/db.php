@@ -17,7 +17,7 @@ if ($is_localhost) {
     // Local Database Configuration (XAMPP Default)
     $servername = "localhost";
     $username = "root";
-    $password = "";
+    $password = "Srushti@02";
     $dbname = "ramani_infosys_db";
 } else {
     // Live Database Configuration (Hostinger/cPanel)

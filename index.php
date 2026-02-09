@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="assets/css/faq.css">
     <link rel="stylesheet" href="assets/css/cta_testimonial.css">
     <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/audit_modal.css">
 
     <link rel="icon" type="image/jpeg" href="assets/img/favicon.jpeg">
     <link rel="shortcut icon" type="image/jpeg" href="assets/img/favicon.jpeg">
@@ -40,7 +41,7 @@
             </button>
 
             <div class="logo">
-                <a href="index.php">
+                <a href="./">
                     <img src="assets/img/logo.jpeg" alt="Ramani Infosys Logo">
                 </a>
             </div>
@@ -56,7 +57,7 @@
 
             <div class="header-actions">
                 <a href="#" class="btn btn-outline">Get A Free Audit</a>
-                <a href="#" class="btn btn-primary">Get in Touch</a>
+                <a href="contact-us.php" class="btn btn-primary">Get in Touch</a>
             </div>
         </div>
     </header>
@@ -64,6 +65,11 @@
     <!-- Mobile Navigation Drawer -->
     <div class="mobile-nav-overlay"></div>
     <div class="mobile-nav-drawer">
+        <div class="mobile-nav-logo">
+            <a href="./">
+                <img src="assets/img/logo.jpeg" alt="Ramani Infosys Logo">
+            </a>
+        </div>
         <ul class="mobile-nav-list">
             <li><a href="services.php">Services</a></li>
             <li><a href="our-work.php">Our Work</a></li>
@@ -72,7 +78,7 @@
         </ul>
         <div class="mobile-cta-actions">
             <a href="#" class="btn btn-outline" style="width: 100%; text-align: center;">Get A Free Audit</a>
-            <a href="#" class="btn btn-primary" style="width: 100%; text-align: center;">Get in Touch</a>
+            <a href="contact-us.php" class="btn btn-primary" style="width: 100%; text-align: center;">Get in Touch</a>
         </div>
     </div>
 
@@ -89,10 +95,10 @@
         <div class="hero-container">
             <!-- Left Side: Content -->
             <div class="hero-content">
-                <h1>Premier <span class="highlight">.NET & Angular</span> <br> Development Agency</h1>
-                <p>We partner with enterprise brands to build scalable, high-performance web applications. From legacy
-                    modernization to cloud-native platforms, our experts deliver robust solutions that drive digital
-                    transformation.</p>
+                <h1>Premier <span class="highlight">Web, App & UI/UX</span> <br> Development Agency</h1>
+                <p>We specialize in crafting cutting-edge web platforms, intuitive mobile applications, and immersive
+                    UI/UX designs. From concept to deployment, we deliver scalable solutions that elevate user
+                    engagement and drive business growth.</p>
                 <a href="services.php" class="btn btn-primary btn-large">Explore Services</a>
             </div>
 
@@ -151,7 +157,8 @@
     <!-- Case Study Section -->
     <section class="case-study-section">
         <div class="section-header">
-            <h2 class="section-title">Inside Our <span class="highlight">.NET & Angular</span> Agency’s <br> Brand
+            <h2 class="section-title">Inside Our <span class="highlight">Web & App Development</span> Agency’s <br>
+                Brand
                 Success Stories</h2>
         </div>
 
@@ -449,7 +456,7 @@
             <div class="stat-card clients-block">
                 <div class="clients-header">
                     <h2>200+</h2>
-                    <p>Happy Clients In 30+ Countries</p>
+                    <p>Happy Clients In 15+ Countries</p>
                 </div>
                 <div class="clients-grid">
                     <!-- Text placeholdes for logos -->
@@ -701,7 +708,7 @@
                 <h2 class="faq-title">Answers to Your Questions, All in One Place</h2>
                 <p class="faq-subtitle">If you can't find an answer that you're looking for, feel free to drop us a
                     line.</p>
-                <a href="#" class="btn-faq-contact">Get In Touch</a>
+                <a href="contact-us.php" class="btn-faq-contact">Get In Touch</a>
             </div>
 
             <div class="faq-list">
@@ -879,7 +886,7 @@
                                 <div style="color: #000; font-size: 0.8rem;">★★★★★</div>
                             </div>
                         </div>
-                        <p class="ctat-testimonial-text">"We came to Ramani Shopify Agency with a rough idea, and they
+                        <p class="ctat-testimonial-text">"We came to Ramani Software Agency with a rough idea, and they
                             turned it into something way beyond what we imagined. The team was fast, responsive, and
                             knew Shopify inside out."</p>
 
@@ -927,7 +934,7 @@
                 <div class="footer-cta-text">
                     <h2>230+ brands, $3.5B+ in sales.<br><span>You could be next!</span></h2>
                 </div>
-                <a href="#" class="btn-footer-cta">Get In Touch</a>
+                <a href="contact-us.php" class="btn-footer-cta">Get In Touch</a>
             </div>
 
             <!-- 2. Main Content -->
@@ -1025,7 +1032,7 @@
                         <li><a href="our-work.php">Our Work</a></li>
                         <li><a href="who-we-are.php">Who we are</a></li>
                         <li><a href="portfolio.php">Portfolio</a></li>
-                        <li><a href="#">Get In Touch</a></li>
+                        <li><a href="contact-us.php">Get In Touch</a></li>
                         <li><a href="#">Book a call</a></li>
                     </ul>
                 </div>
@@ -1063,7 +1070,7 @@
 
             <!-- 4. Bottom -->
             <div class="footer-bottom">
-                <div>© 2025, Ramani Shopify Agency</div>
+                <div>© 2025, Ramani Software Agency</div>
                 <div class="footer-country-links">
                     <a href="#">USA</a> •
                     <a href="#">CANADA</a> •
@@ -1238,6 +1245,9 @@
             });
         }
     </script>
+    <!-- Audit Modal Logic -->
+    <script src="assets/js/audit-modal.js"></script>
+    <?php include 'includes/audit-modal.php'; ?>
 </body>
 
 </html>

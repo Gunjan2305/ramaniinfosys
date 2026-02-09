@@ -4,25 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Work - Ramani Infosys</title>
+    <title>Contact Us - Ramani Infosys</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/lines.css">
-    <link rel="stylesheet" href="assets/css/slider.css">
-    <link rel="stylesheet" href="assets/css/case_study.css">
-    <link rel="stylesheet" href="assets/css/services_accordion.css">
-    <link rel="stylesheet" href="assets/css/stats_grid.css">
-    <link rel="stylesheet" href="assets/css/partners.css">
-    <link rel="stylesheet" href="assets/css/experts.css">
-    <link rel="stylesheet" href="assets/css/resources.css">
-    <link rel="stylesheet" href="assets/css/faq.css">
-    <link rel="stylesheet" href="assets/css/cta_testimonial.css">
     <link rel="stylesheet" href="assets/css/footer.css">
-    <link rel="stylesheet" href="assets/css/our-work.css">
     <link rel="stylesheet" href="assets/css/audit_modal.css">
+    <link rel="stylesheet" href="assets/css/contact.css">
 
     <link rel="icon" type="image/jpeg" href="assets/img/favicon.jpeg">
     <link rel="shortcut icon" type="image/jpeg" href="assets/img/favicon.jpeg">
-    <!-- Google Fonts for premium look -->
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -48,8 +39,7 @@
             <nav class="nav-menu">
                 <ul>
                     <li><a href="services.php">Services</a></li>
-                    <li><a href="our-work.php" class="active" style="color: var(--primary-color); font-weight: 600;">Our
-                            Work</a></li>
+                    <li><a href="our-work.php">Our Work</a></li>
                     <li><a href="who-we-are.php">Who we are</a></li>
                     <li><a href="portfolio.php">Portfolio</a></li>
                 </ul>
@@ -72,7 +62,7 @@
         </div>
         <ul class="mobile-nav-list">
             <li><a href="services.php">Services</a></li>
-            <li><a href="our-work.php" class="active">Our Work</a></li>
+            <li><a href="our-work.php">Our Work</a></li>
             <li><a href="who-we-are.php">Who we are</a></li>
             <li><a href="portfolio.php">Portfolio</a></li>
         </ul>
@@ -82,130 +72,54 @@
         </div>
     </div>
 
-    <!-- Our Work Page Content -->
-    <section class="work-page-header">
+    <!-- Contact Hero Section -->
+    <section class="contact-hero">
         <div class="container">
-            <h1 class="work-page-title">Recent Work</h1>
-            <p class="work-page-subtitle">We partner with enterprise brands to build scalable, high-performance web
-                applications. Here are some of our success stories.</p>
+            <h1>Let's Build Something <br> Amazing Together</h1>
+            <p>Have a project in mind? We'd love to hear about it. Fill out the form below and our team will get back to
+                you within 24 hours.</p>
         </div>
     </section>
 
-    <section class="work-grid-section">
-        <div class="work-grid">
-            <!-- Project 1 -->
-            <div class="work-card">
-                <div class="work-media">
-                    <img src="assets/img/success-brand -1.jpeg" alt="Global Retail Platform">
-                </div>
-                <div class="work-overlay">
-                    <div class="work-info">
-                        <div class="work-tags">
-                            <span class="work-tag">E-Commerce</span>
-                            <span class="work-tag">Angular</span>
+    <!-- Contact Form Section -->
+    <section class="contact-form-section">
+        <div class="container">
+            <div class="contact-form-wrapper">
+                <form id="contactForm" method="POST" action="send-contact.php">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="fullName">Full Name <span class="required">*</span></label>
+                            <input type="text" id="fullName" name="fullName" required placeholder="John Doe">
                         </div>
-                        <h3>Global Retail Platform</h3>
-                        <p class="work-desc">A scalable retail platform serving millions of customers worldwide with
-                            real-time inventory management.</p>
-                    </div>
-                    <a href="#" class="btn-work">View Case Study</a>
-                </div>
-            </div>
 
-            <!-- Project 2 -->
-            <div class="work-card">
-                <div class="work-media">
-                    <img src="assets/img/success-brand -2.jpeg" alt="Secure Banking App">
-                </div>
-                <div class="work-overlay">
-                    <div class="work-info">
-                        <div class="work-tags">
-                            <span class="work-tag">FinTech</span>
-                            <span class="work-tag">.NET Core</span>
+                        <div class="form-group">
+                            <label for="email">Email Address <span class="required">*</span></label>
+                            <input type="email" id="email" name="email" required placeholder="john@company.com">
                         </div>
-                        <h3>Secure Banking App</h3>
-                        <p class="work-desc">High-security banking application with biometric authentication and
-                            fraudulent transaction detection.</p>
-                    </div>
-                    <a href="#" class="btn-work">View Case Study</a>
-                </div>
-            </div>
 
-            <!-- Project 3 -->
-            <div class="work-card">
-                <div class="work-media">
-                    <img src="assets/img/success-brand-3.jpeg" alt="Patient Care System">
-                </div>
-                <div class="work-overlay">
-                    <div class="work-info">
-                        <div class="work-tags">
-                            <span class="work-tag">Healthcare</span>
-                            <span class="work-tag">Azure</span>
+                        <div class="form-group">
+                            <label for="website">Website URL (Optional)</label>
+                            <input type="url" id="website" name="website" placeholder="https://yourcompany.com">
                         </div>
-                        <h3>Patient Care System</h3>
-                        <p class="work-desc">Cloud-based patient management system improving communication between
-                            doctors and patients.</p>
-                    </div>
-                    <a href="#" class="btn-work">View Case Study</a>
-                </div>
-            </div>
 
-            <!-- Project 4 (Duplicate/Variation) -->
-            <div class="work-card">
-                <div class="work-media">
-                    <img src="assets/img/image2.webp" alt="Lifestyle Brand">
-                </div>
-                <div class="work-overlay">
-                    <div class="work-info">
-                        <div class="work-tags">
-                            <span class="work-tag">Shopify Plus</span>
-                            <span class="work-tag">Design</span>
+                        <div class="form-group">
+                            <label for="requirement">Requirement / Subject <span class="required">*</span></label>
+                            <input type="text" id="requirement" name="requirement" required
+                                placeholder="e.g. E-commerce Development, Mobile App...">
                         </div>
-                        <h3>Luxury Lifestyle Brand</h3>
-                        <p class="work-desc">Custom Shopify Plus experience for a high-end fashion retailer with
-                            immersive visuals.</p>
-                    </div>
-                    <a href="#" class="btn-work">View Case Study</a>
-                </div>
-            </div>
 
-            <!-- Project 5 -->
-            <div class="work-card">
-                <div class="work-media">
-                    <img src="assets/img/image-1.webp" alt="SaaS Dashboard">
-                </div>
-                <div class="work-overlay">
-                    <div class="work-info">
-                        <div class="work-tags">
-                            <span class="work-tag">SaaS</span>
-                            <span class="work-tag">React</span>
+                        <div class="form-group full-width">
+                            <label for="message">Message <span class="required">*</span></label>
+                            <textarea id="message" name="message" required rows="5"
+                                placeholder="Tell us more about your project goals, timeline, and budget..."></textarea>
                         </div>
-                        <h3>Analytics Dashboard</h3>
-                        <p class="work-desc">Real-time analytics dashboard for marketing agencies to track campaign
-                            performance.</p>
                     </div>
-                    <a href="#" class="btn-work">View Case Study</a>
-                </div>
-            </div>
 
-            <!-- Project 6 -->
-            <div class="work-card">
-                <div class="work-media">
-                    <video autoplay muted loop playsinline>
-                        <source src="assets/video/banner-video.mp4" type="video/mp4">
-                    </video>
-                </div>
-                <div class="work-overlay">
-                    <div class="work-info">
-                        <div class="work-tags">
-                            <span class="work-tag">Digital Experience</span>
-                            <span class="work-tag">Motion</span>
-                        </div>
-                        <h3>Immersive Campaign</h3>
-                        <p class="work-desc">Award-winning digital campaign featuring interactive video and motion
-                            graphics.</p>
-                    </div>
-                    <a href="#" class="btn-work">View Case Study</a>
+                    <button type="submit" class="btn-submit">Send Message</button>
+                </form>
+                <div id="contactSuccess" class="success-message" style="display: none;">
+                    <h3>Thank You!</h3>
+                    <p>Your message has been sent successfully. We'll be in touch soon.</p>
                 </div>
             </div>
         </div>
@@ -217,9 +131,10 @@
             <!-- 1. Header CTA -->
             <div class="footer-cta-bar">
                 <div class="footer-cta-text">
-                    <h2>230+ brands, $3.5B+ in sales.<br><span>You could be next!</span></h2>
+                    <h2>Ready to get started?<br><span>Let's talk.</span></h2>
                 </div>
-                <a href="contact-us.php" class="btn-footer-cta">Get In Touch</a>
+                <!-- Already on contact page, maybe scroll to top or link to email -->
+                <a href="#contactForm" class="btn-footer-cta">Get In Touch</a>
             </div>
 
             <!-- 2. Main Content -->
@@ -235,7 +150,6 @@
                             <path stroke="#fff" stroke-width="37"
                                 d="M0 55.3h640M0 129h640M0 202.8h640M0 276.5h640M0 350.2h640M0 424h640" />
                             <path fill="#192f5d" d="M0 0h249.8v249.8H0z" />
-                            <!-- Stars simplified -->
                             <path fill="#fff"
                                 d="M22 22h10v10H22zM52 22h10v10H52zM82 22h10v10H82zM112 22h10v10H112zM142 22h10v10H142z" />
                         </svg>
@@ -317,7 +231,7 @@
                         <li><a href="our-work.php">Our Work</a></li>
                         <li><a href="who-we-are.php">Who we are</a></li>
                         <li><a href="portfolio.php">Portfolio</a></li>
-                        <li><a href="contact-us.php">Get In Touch</a></li>
+                        <li><a href="#">Get In Touch</a></li>
                         <li><a href="#">Book a call</a></li>
                     </ul>
                 </div>
@@ -336,7 +250,7 @@
                 </div>
             </div>
 
-            <!-- 3. Partner Strip (Updated) -->
+            <!-- 3. Partner Strip -->
             <div class="footer-partners-strip">
                 <div class="fps-stat-box">
                     <span class="fps-stars">★★★★★</span>
@@ -344,7 +258,6 @@
                 </div>
                 <div class="fps-marquee">
                     <div class="fps-track">
-                        <!-- Repeating these 4 times to ensure seamless loop -->
                         <img src="assets/img/footer_ticker_logos.png" alt="Partners">
                         <img src="assets/img/footer_ticker_logos.png" alt="Partners">
                         <img src="assets/img/footer_ticker_logos.png" alt="Partners">
@@ -367,8 +280,7 @@
         </div>
     </footer>
 
-    <!-- Footer End -->
-
+    <!-- Scripts -->
     <script>
         // Force page to start at the top on reload
         if (history.scrollRestoration) {
@@ -382,7 +294,7 @@
             window.scrollTo(0, 0);
         }
 
-        // Mobile Menu Logic
+        // Mobile Menu
         const mobileBtn = document.querySelector('.mobile-menu-btn');
         const mobileDrawer = document.querySelector('.mobile-nav-drawer');
         const mobileOverlay = document.querySelector('.mobile-nav-overlay');
@@ -392,7 +304,7 @@
                 mobileBtn.classList.toggle('active');
                 mobileDrawer.classList.toggle('active');
                 mobileOverlay.classList.toggle('active');
-                document.body.style.overflow = mobileDrawer.classList.contains('active') ? 'hidden' : ''; // Prevent background scroll
+                document.body.style.overflow = mobileDrawer.classList.contains('active') ? 'hidden' : '';
             });
         }
 
@@ -404,10 +316,52 @@
                 document.body.style.overflow = '';
             });
         }
+
+        // Handle Contact Form
+        const contactForm = document.getElementById('contactForm');
+        const contactSuccess = document.getElementById('contactSuccess');
+
+        if (contactForm) {
+            contactForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+
+                const submitBtn = contactForm.querySelector('.btn-submit');
+                const originalText = submitBtn.textContent;
+                submitBtn.textContent = 'Sending...';
+                submitBtn.disabled = true;
+
+                const formData = new FormData(contactForm);
+
+                fetch('send-contact', {
+                    method: 'POST',
+                    body: formData
+                })
+                    .then(response => response.json())
+                    .then(data => {
+                        if (data.status === 'success') {
+                            contactForm.style.display = 'none';
+                            contactSuccess.style.display = 'block';
+                        } else {
+                            alert(data.message || 'Error sending message.');
+                            submitBtn.textContent = originalText;
+                            submitBtn.disabled = false;
+                        }
+                    })
+                    .catch(error => {
+                        console.error(error);
+                        // alert('Error sending message. Please try again.');
+                        alert('Error sending message. This may be due to a local server configuration issue. Please check the console for details.');
+                        submitBtn.textContent = originalText;
+                        submitBtn.disabled = false;
+                    });
+            });
+        }
     </script>
+
     <!-- Audit Modal Logic -->
     <script src="assets/js/audit-modal.js"></script>
     <?php include 'includes/audit-modal.php'; ?>
+
 </body>
 
 </html>

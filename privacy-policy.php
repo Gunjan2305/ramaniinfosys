@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/lines.css">
     <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/audit_modal.css">
 
     <link rel="icon" type="image/jpeg" href="assets/img/favicon.jpeg">
     <link rel="shortcut icon" type="image/jpeg" href="assets/img/favicon.jpeg">
@@ -87,15 +88,22 @@
 
     <header class="sticky-header">
         <div class="container">
+            <!-- Hamburger Button -->
+            <button class="mobile-menu-btn" aria-label="Toggle Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
             <div class="logo">
-                <a href="index.php">
+                <a href="./">
                     <img src="assets/img/logo.jpeg" alt="Ramani Infosys Logo">
                 </a>
             </div>
 
             <nav class="nav-menu">
                 <ul>
-                    <li><a href="index.php#services">Services</a></li>
+                    <li><a href="./#services">Services</a></li>
                     <li><a href="our-work.php">Our Work</a></li>
                     <li><a href="who-we-are.php">Who we are</a></li>
                     <li><a href="portfolio.php">Portfolio</a></li>
@@ -104,10 +112,30 @@
 
             <div class="header-actions">
                 <a href="#" class="btn btn-outline">Get A Free Audit</a>
-                <a href="#" class="btn btn-primary">Get in Touch</a>
+                <a href="contact-us.php" class="btn btn-primary">Get in Touch</a>
             </div>
         </div>
     </header>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-nav-overlay"></div>
+    <div class="mobile-nav-drawer">
+        <div class="mobile-nav-logo">
+            <a href="./">
+                <img src="assets/img/logo.jpeg" alt="Ramani Infosys Logo">
+            </a>
+        </div>
+        <ul class="mobile-nav-list">
+            <li><a href="./#services">Services</a></li>
+            <li><a href="our-work.php">Our Work</a></li>
+            <li><a href="who-we-are.php">Who we are</a></li>
+            <li><a href="portfolio.php">Portfolio</a></li>
+        </ul>
+        <div class="mobile-cta-actions">
+            <a href="#" class="btn btn-outline" style="width: 100%; text-align: center;">Get A Free Audit</a>
+            <a href="contact-us.php" class="btn btn-primary" style="width: 100%; text-align: center;">Get in Touch</a>
+        </div>
+    </div>
 
     <div class="page-header">
         <div class="container">
@@ -178,7 +206,7 @@
                 <div class="footer-cta-text">
                     <h2>230+ brands, $3.5B+ in sales.<br><span>You could be next!</span></h2>
                 </div>
-                <a href="#" class="btn-footer-cta">Get In Touch</a>
+                <a href="contact-us.php" class="btn-footer-cta">Get In Touch</a>
             </div>
 
             <!-- 2. Main Content -->
@@ -276,7 +304,7 @@
                         <li><a href="our-work.php">Our Work</a></li>
                         <li><a href="who-we-are.php">Who we are</a></li>
                         <li><a href="portfolio.php">Portfolio</a></li>
-                        <li><a href="#">Get In Touch</a></li>
+                        <li><a href="contact-us.php">Get In Touch</a></li>
                         <li><a href="#">Book a call</a></li>
                     </ul>
                 </div>
@@ -314,7 +342,7 @@
 
             <!-- 4. Bottom -->
             <div class="footer-bottom">
-                <div>© 2025, Ramani Shopify Agency</div>
+                <div>© 2025, Ramani Software Agency</div>
                 <div class="footer-country-links">
                     <a href="#">USA</a> •
                     <a href="#">CANADA</a> •
@@ -325,6 +353,47 @@
             </div>
         </div>
     </footer>
+    <!-- Mobile Menu Script -->
+    <script>
+        // Force page to start at the top on reload
+        if (history.scrollRestoration) {
+            history.scrollRestoration = 'manual';
+        } else {
+            window.onbeforeunload = function () {
+                window.scrollTo(0, 0);
+            }
+        }
+        window.onload = function () {
+            window.scrollTo(0, 0);
+        }
+
+        // Mobile Menu Logic
+        const mobileBtn = document.querySelector('.mobile-menu-btn');
+        const mobileDrawer = document.querySelector('.mobile-nav-drawer');
+        const mobileOverlay = document.querySelector('.mobile-nav-overlay');
+
+        if (mobileBtn) {
+            mobileBtn.addEventListener('click', () => {
+                mobileBtn.classList.toggle('active');
+                mobileDrawer.classList.toggle('active');
+                mobileOverlay.classList.toggle('active');
+                document.body.style.overflow = mobileDrawer.classList.contains('active') ? 'hidden' : ''; // Prevent background scroll
+            });
+        }
+
+        if (mobileOverlay) {
+            mobileOverlay.addEventListener('click', () => {
+                mobileBtn.classList.remove('active');
+                mobileDrawer.classList.remove('active');
+                mobileOverlay.classList.remove('active');
+                document.body.style.overflow = '';
+            });
+        }
+    </script>
+
+    <!-- Audit Modal Logic -->
+    <script src="assets/js/audit-modal.js"></script>
+    <?php include 'includes/audit-modal.php'; ?>
 </body>
 
 </html>

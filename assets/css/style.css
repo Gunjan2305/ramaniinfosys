@@ -43,6 +43,19 @@ body {
     transition: all 0.3s ease;
 }
 
+/* Hide content above the floating header */
+.sticky-header::before {
+    content: "";
+    position: absolute;
+    top: -51px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+    height: 50px;
+    background: var(--bg-dark);
+    z-index: -1;
+}
+
 .container {
     display: flex;
     align-items: center;
@@ -157,11 +170,20 @@ body {
 /* Mobile Nav Links */
 .mobile-nav-list {
     list-style: none;
-    margin-top: 4rem;
+    margin-top: 2rem;
+}
+
+.mobile-nav-logo {
+    margin-bottom: 2rem;
+}
+
+.mobile-nav-logo img {
+    height: 35px;
+    width: auto;
 }
 
 .mobile-nav-list li {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.2rem;
     opacity: 0;
     transform: translateX(20px);
     transition: all 0.3s ease;
@@ -196,7 +218,7 @@ body {
 .mobile-nav-list a {
     text-decoration: none;
     color: var(--text-color);
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     font-weight: 500;
     display: block;
 }
@@ -553,9 +575,20 @@ body {
         padding: 0.8rem 1rem;
     }
 
-    .nav-menu,
-    .btn-outline {
+    .nav-menu {
         display: none;
+    }
+
+    /* Hide only the header outline button, but keep it in drawer */
+    .header-actions .btn-outline {
+        display: none;
+    }
+
+    /* Ensure drawer buttons are visible and stacked */
+    .mobile-cta-actions .btn {
+        display: block;
+        width: 100%;
+        text-align: center;
     }
 
     .mobile-menu-btn {

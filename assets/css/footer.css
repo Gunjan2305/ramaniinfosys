@@ -168,21 +168,26 @@
     color: #999;
     text-decoration: none;
     font-size: 0.9rem;
-    transition: color 0.3s, padding-left 0.3s;
+    transition: all 0.3s;
     display: inline-block;
+    position: relative;
+    /* Removed padding-left transition to prevent reflow */
 }
 
 .footer-links a:hover {
     color: #fff;
-    padding-left: 5px;
+    transform: translateX(10px);
+    /* Moves purely visually, no reflow */
 }
 
 .footer-links a::before {
-    content: '› ';
-    color: #666;
-    margin-right: 5px;
+    content: '›';
+    position: absolute;
+    left: -15px;
+    color: var(--primary-color);
     opacity: 0;
-    transition: opacity 0.3s;
+    transition: all 0.3s;
+    font-weight: bold;
 }
 
 .footer-links a:hover::before {

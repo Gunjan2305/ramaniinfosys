@@ -6,6 +6,13 @@
     color: #fff;
 }
 
+.work-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: block;
+}
+
 .work-page-title {
     font-size: 4rem;
     font-weight: 700;
@@ -137,9 +144,14 @@
 
 .btn-work:hover::after {
     transform: translateX(5px);
+
 }
 
 @media (max-width: 768px) {
+    .work-page-header {
+        padding: 100px 0 40px;
+    }
+
     .work-page-title {
         font-size: 2.8rem;
     }

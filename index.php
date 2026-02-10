@@ -176,7 +176,8 @@
                                 </div>
                                 <h3>Global Retail Platform</h3>
                             </div>
-                            <a href="#" class="btn-case">View Case Study</a>
+                            <a href="case-study-details.php?id=global-retail-platform" class="btn-case">View Case
+                                Study</a>
                         </div>
                     </div>
                 </div>
@@ -193,7 +194,7 @@
                                 </div>
                                 <h3>Secure Banking App</h3>
                             </div>
-                            <a href="#" class="btn-case">View Case Study</a>
+                            <a href="case-study-details.php?id=secure-banking-app" class="btn-case">View Case Study</a>
                         </div>
                     </div>
                 </div>
@@ -210,7 +211,7 @@
                                 </div>
                                 <h3>Patient Care System</h3>
                             </div>
-                            <a href="#" class="btn-case">View Case Study</a>
+                            <a href="case-study-details.php?id=patient-care-system" class="btn-case">View Case Study</a>
                         </div>
                     </div>
                 </div>
@@ -224,12 +225,12 @@
                         <div class="case-overlay">
                             <div class="case-info">
                                 <div class="case-tags">
-                                    <span class="tag">E-Commerce</span>
-                                    <span class="tag">Angular</span>
+                                    <span class="tag">Digital Experience</span>
+                                    <span class="tag">Motion</span>
                                 </div>
-                                <h3>Global Retail Platform</h3>
+                                <h3>Immersive Campaign</h3>
                             </div>
-                            <a href="#" class="btn-case">View Case Study</a>
+                            <a href="case-study-details.php?id=immersive-campaign" class="btn-case">View Case Study</a>
                         </div>
                     </div>
                 </div>
@@ -241,12 +242,13 @@
                         <div class="case-overlay">
                             <div class="case-info">
                                 <div class="case-tags">
-                                    <span class="tag">FinTech</span>
-                                    <span class="tag">.NET Core</span>
+                                    <span class="tag">Shopify Plus</span>
+                                    <span class="tag">Design</span>
                                 </div>
-                                <h3>Secure Banking App</h3>
+                                <h3>Luxury Lifestyle Brand</h3>
                             </div>
-                            <a href="#" class="btn-case">View Case Study</a>
+                            <a href="case-study-details.php?id=luxury-lifestyle-brand" class="btn-case">View Case
+                                Study</a>
                         </div>
                     </div>
                 </div>
@@ -258,12 +260,12 @@
                         <div class="case-overlay">
                             <div class="case-info">
                                 <div class="case-tags">
-                                    <span class="tag">Healthcare</span>
-                                    <span class="tag">Azure</span>
+                                    <span class="tag">SaaS</span>
+                                    <span class="tag">React</span>
                                 </div>
-                                <h3>Patient Care System</h3>
+                                <h3>Analytics Dashboard</h3>
                             </div>
-                            <a href="#" class="btn-case">View Case Study</a>
+                            <a href="case-study-details.php?id=analytics-dashboard" class="btn-case">View Case Study</a>
                         </div>
                     </div>
                 </div>

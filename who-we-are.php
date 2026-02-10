@@ -195,46 +195,7 @@
         </div>
     </section>
 
-    <!-- Team Section -->
-    <section class="section-padding" style="background: #0a0a0a;">
-        <div class="container">
-            <h2 class="section-title reveal-on-scroll">Meet The Leadership</h2>
-            <div class="team-grid">
-                <!-- Member 1 -->
-                <div class="team-member reveal-on-scroll">
-                    <img src="assets/img/testimonial_user_avatar.png" alt="Rajesh Ramani" class="member-photo">
-                    <div class="member-info">
-                        <h4 class="member-name">Rajesh Ramani</h4>
-                        <span class="member-role">CEO & Founder</span>
-                    </div>
-                </div>
-                <!-- Member 2 -->
-                <div class="team-member reveal-on-scroll">
-                    <img src="assets/img/testimonial_user_avatar.png" alt="Priya Patel" class="member-photo">
-                    <div class="member-info">
-                        <h4 class="member-name">Priya Patel</h4>
-                        <span class="member-role">Chief Technology Officer</span>
-                    </div>
-                </div>
-                <!-- Member 3 -->
-                <div class="team-member reveal-on-scroll">
-                    <img src="assets/img/testimonial_user_avatar.png" alt="Amit Shah" class="member-photo">
-                    <div class="member-info">
-                        <h4 class="member-name">Amit Shah</h4>
-                        <span class="member-role">Head of Design</span>
-                    </div>
-                </div>
-                <!-- Member 4 -->
-                <div class="team-member reveal-on-scroll">
-                    <img src="assets/img/testimonial_user_avatar.png" alt="Sarah Jenkins" class="member-photo">
-                    <div class="member-info">
-                        <h4 class="member-name">Sarah Jenkins</h4>
-                        <span class="member-role">Director of Client Success</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+
 
     <!-- Footer -->
     <footer class="site-footer">

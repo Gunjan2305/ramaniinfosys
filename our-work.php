@@ -84,7 +84,7 @@
 
     <!-- Our Work Page Content -->
     <section class="work-page-header">
-        <div class="container">
+        <div class="work-container">
             <h1 class="work-page-title">Recent Work</h1>
             <p class="work-page-subtitle">We partner with enterprise brands to build scalable, high-performance web
                 applications. Here are some of our success stories.</p>
@@ -108,7 +108,7 @@
                         <p class="work-desc">A scalable retail platform serving millions of customers worldwide with
                             real-time inventory management.</p>
                     </div>
-                    <a href="#" class="btn-work">View Case Study</a>
+                    <a href="case-study-details.php?id=global-retail-platform" class="btn-work">View Case Study</a>
                 </div>
             </div>
 
@@ -127,7 +127,7 @@
                         <p class="work-desc">High-security banking application with biometric authentication and
                             fraudulent transaction detection.</p>
                     </div>
-                    <a href="#" class="btn-work">View Case Study</a>
+                    <a href="case-study-details.php?id=secure-banking-app" class="btn-work">View Case Study</a>
                 </div>
             </div>
 
@@ -146,7 +146,7 @@
                         <p class="work-desc">Cloud-based patient management system improving communication between
                             doctors and patients.</p>
                     </div>
-                    <a href="#" class="btn-work">View Case Study</a>
+                    <a href="case-study-details.php?id=patient-care-system" class="btn-work">View Case Study</a>
                 </div>
             </div>
 
@@ -165,7 +165,7 @@
                         <p class="work-desc">Custom Shopify Plus experience for a high-end fashion retailer with
                             immersive visuals.</p>
                     </div>
-                    <a href="#" class="btn-work">View Case Study</a>
+                    <a href="case-study-details.php?id=luxury-lifestyle-brand" class="btn-work">View Case Study</a>
                 </div>
             </div>
 
@@ -184,7 +184,7 @@
                         <p class="work-desc">Real-time analytics dashboard for marketing agencies to track campaign
                             performance.</p>
                     </div>
-                    <a href="#" class="btn-work">View Case Study</a>
+                    <a href="case-study-details.php?id=analytics-dashboard" class="btn-work">View Case Study</a>
                 </div>
             </div>
 
@@ -205,7 +205,7 @@
                         <p class="work-desc">Award-winning digital campaign featuring interactive video and motion
                             graphics.</p>
                     </div>
-                    <a href="#" class="btn-work">View Case Study</a>
+                    <a href="case-study-details.php?id=immersive-campaign" class="btn-work">View Case Study</a>
                 </div>
             </div>
         </div>

@@ -6,10 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Who We Are - Ramani Infosys</title>
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/lines.css">
-    <link rel="stylesheet" href="assets/css/footer.css">
-    <link rel="stylesheet" href="assets/css/who-we-are.css">
-    <link rel="stylesheet" href="assets/css/audit_modal.css">
+
 
     <link rel="icon" type="image/jpeg" href="assets/img/favicon.jpeg">
     <link rel="shortcut icon" type="image/jpeg" href="assets/img/favicon.jpeg">
@@ -76,7 +73,7 @@
 
     <!-- Hero Section -->
     <section class="about-hero">
-        <div class="container mobille-header" >
+        <div class="container mobille-header">
             <h1>We Build Digital <br> Experiences That Matter</h1>
             <p>Ramani Infosys is a global team of developers, designers, and strategists committed to pushing the
                 boundaries of what's possible on the web.</p>
@@ -142,7 +139,7 @@
 
     <!-- Core Values Section -->
     <section class="section-padding">
-        <div class="container mobille-header" >
+        <div class="container mobille-header">
             <h2 class="section-title reveal-on-scroll">Our Core Values</h2>
             <div class="values-grid">
                 <!-- Value 1 -->

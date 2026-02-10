@@ -76,7 +76,7 @@
 
     <!-- Hero Section -->
     <section class="about-hero">
-        <div class="container">
+        <div class="container mobille-header" >
             <h1>We Build Digital <br> Experiences That Matter</h1>
             <p>Ramani Infosys is a global team of developers, designers, and strategists committed to pushing the
                 boundaries of what's possible on the web.</p>
@@ -118,7 +118,7 @@
 
     <!-- Stats Banner -->
     <div class="stats-banner reveal-on-scroll">
-        <div class="container">
+        <div class="container" style="justify-content: center;">
             <div class="stats-flex">
                 <div class="stat-item">
                     <span class="stat-number">10+</span>
@@ -142,7 +142,7 @@
 
     <!-- Core Values Section -->
     <section class="section-padding">
-        <div class="container">
+        <div class="container mobille-header" >
             <h2 class="section-title reveal-on-scroll">Our Core Values</h2>
             <div class="values-grid">
                 <!-- Value 1 -->

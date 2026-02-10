@@ -9,11 +9,11 @@
 
 .portfolio-header h1 {
     flex: 1;
-    font-size: 4rem;
+    font-size: 44px;
     font-weight: 700;
     color: #fff;
     margin-bottom: 20px;
-    background: linear-gradient(to right, #fff 20%, #666 100%);
+    background: linear-gradient(90deg, #00BFFF, #8A2BE2);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -211,6 +211,9 @@
 
 /* Responsive */
 @media (max-width: 1024px) {
+    .portfolio-content{
+        padding: 0 16px;
+    }
     .portfolio-content .container {
         flex-direction: column;
         gap: 30px;
@@ -238,33 +241,69 @@
 @media (max-width: 768px) {
     .portfolio-content .container {
         flex-direction: column;
+        width: 100%;
+    }
+
+    .portfolio-filters {
+        width: 100%;
+        flex-direction: row;
+        overflow-x: auto;
+        padding-bottom: 10px;
+        white-space: nowrap;
+        gap: 10px;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .portfolio-filters::-webkit-scrollbar {
+        display: none;
+    }
+
+    .filter-btn {
+        width: auto;
+        flex: 0 0 auto;
+        padding: 10px 20px;
+        /* Reduced padding */
+        font-size: 0.9rem;
+        /* Reduced font size */
     }
 
     .portfolio-slider-wrapper {
         width: 100%;
         display: block;
-        /* Remove flex centering */
     }
 
     .slider-nav {
         display: none;
-        /* Hide nav buttons on mobile */
     }
 
+    /* Restore slider behavior on mobile */
     .portfolio-grid {
-        display: block;
-        overflow-x: hidden;
-        margin-bottom: 2rem;
+        display: flex;
+        /* Flex again for slider */
+        overflow-x: auto;
+        gap: 15px;
+        padding-bottom: 20px;
         width: 100%;
-        padding-top: 0;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
     }
 
     .portfolio-item {
-        margin-bottom: 20px;
-        width: 100%;
+        flex: 0 0 85vw;
+        /* Show partial next item */
+        width: 85vw;
+        max-width: 350px;
+        margin-bottom: 0;
+        /* Remove bottom margin since horizontal */
+        scroll-snap-align: center;
     }
 
     .portfolio-header h1 {
         font-size: 3rem;
+    }
+
+    .mobille-header {
+        flex-direction: column;
+        justify-content: center;
     }
 }

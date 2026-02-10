@@ -109,7 +109,7 @@
                 <h3>.NET Development</h3>
                 <p>Enterprise-grade manufacturing of web applications using .NET Core, ensuring high performance,
                     security, and scalability for large organizations.</p>
-                <a href="#" class="service-link">Learn about .NET →</a>
+                <a href="#dotnet" class="service-link" onclick="openAccordion('dotnet')">Learn about .NET →</a>
             </div>
 
             <!-- Card 2: Angular -->
@@ -118,7 +118,7 @@
                 <h3>Angular Solutions</h3>
                 <p>Building dynamic, responsive Single Page Applications (SPAs) and complex front-end interfaces that
                     provide seamless user experiences.</p>
-                <a href="#" class="service-link">View Angular Work →</a>
+                <a href="#angular" class="service-link" onclick="openAccordion('angular')">View Angular Work →</a>
             </div>
 
             <!-- Card 3: ReactJS -->
@@ -127,7 +127,7 @@
                 <h3>ReactJS & Node.js</h3>
                 <p>Full-stack JavaScript development for modern, fast, and interactive web applications using the latest
                     MERN stack technologies.</p>
-                <a href="#" class="service-link">Explore React →</a>
+                <a href="#react" class="service-link" onclick="openAccordion('react')">Explore React →</a>
             </div>
 
             <!-- Card 4: Shopify -->
@@ -136,7 +136,7 @@
                 <h3>Shopify Stores</h3>
                 <p>Custom Shopify store design and development to launch your brand with a stunning, high-converting
                     online presence.</p>
-                <a href="#" class="service-link">Shopify Services →</a>
+                <a href="#shopify" class="service-link" onclick="openAccordion('shopify')">Shopify Services →</a>
             </div>
 
             <!-- Card 5: Shopify Plus -->
@@ -145,7 +145,7 @@
                 <h3>Shopify Plus</h3>
                 <p>Scalable enterprise e-commerce solutions, B2B channels, and custom automation for high-volume
                     merchants.</p>
-                <a href="#" class="service-link">Shopify Plus →</a>
+                <a href="#shopify" class="service-link" onclick="openAccordion('shopify')">Shopify Plus →</a>
             </div>
 
             <!-- Card 6: Azure/Cloud -->
@@ -154,7 +154,7 @@
                 <h3>Cloud & DevOps</h3>
                 <p>Azure cloud integration, migration, and DevOps strategies to streamline your deployment and
                     infrastructure management.</p>
-                <a href="#" class="service-link">Cloud Solutions →</a>
+                <a href="contact-us.php" class="service-link">Cloud Solutions →</a>
             </div>
         </div>
     </section>
@@ -200,7 +200,7 @@
             </p>
 
             <!-- Item 1: .NET Development -->
-            <div class="accordion-item active">
+            <div class="accordion-item active" id="dotnet">
                 <div class="accordion-header">
                     <span>.NET Development</span>
                     <span class="accordion-icon"></span>
@@ -232,7 +232,7 @@
             </div>
 
             <!-- Item 2: Angular Development -->
-            <div class="accordion-item">
+            <div class="accordion-item" id="angular">
                 <div class="accordion-header">
                     <span>Angular Development</span>
                     <span class="accordion-icon"></span>
@@ -264,7 +264,7 @@
             </div>
 
             <!-- Item 3: ReactJS & NodeJS -->
-            <div class="accordion-item">
+            <div class="accordion-item" id="react">
                 <div class="accordion-header">
                     <span>ReactJS & NodeJS</span>
                     <span class="accordion-icon"></span>
@@ -296,7 +296,7 @@
             </div>
 
             <!-- Item 4: Shopify & Shopify Plus -->
-            <div class="accordion-item">
+            <div class="accordion-item" id="shopify">
                 <div class="accordion-header">
                     <span>Shopify & Shopify Plus</span>
                     <span class="accordion-icon"></span>
@@ -493,6 +493,43 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 
     <script>
+        // Open Accordion Function
+        function openAccordion(id) {
+            // Remove active from all
+            document.querySelectorAll('.accordion-item').forEach(item => {
+                item.classList.remove('active');
+                // Also collapse the content if it was open
+                const content = item.querySelector('.accordion-content');
+                if (content) {
+                    content.style.maxHeight = null;
+                }
+            });
+
+            // Activate target
+            const target = document.getElementById(id);
+            if (target) {
+                target.classList.add('active');
+                // Expand the content
+                const content = target.querySelector('.accordion-content');
+                if (content) {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                }
+
+                // Scroll to target with offset
+                const yOffset = -100; // Header height offset
+                const y = target.getBoundingClientRect().top + window.pageYOffset + yOffset;
+                window.scrollTo({ top: y, behavior: 'smooth' });
+            }
+        }
+
+        // Handle hash in URL on page load
+        window.addEventListener('DOMContentLoaded', () => {
+            if (window.location.hash) {
+                const hash = window.location.hash.substring(1); // Remove '#'
+                openAccordion(hash);
+            }
+        });
+
         // Force page to start at the top on reload
         if (history.scrollRestoration) {
             history.scrollRestoration = 'manual';
@@ -507,7 +544,7 @@
 
         // Fade out hero section on scroll
         window.addEventListener('scroll', function () {
-            const heroSection = document.querySelector('.hero-section');
+            const heroSection = document.querySelector('.service-hero-section');
             if (heroSection) {
                 const scrollPosition = window.scrollY;
                 const heroHeight = heroSection.offsetHeight;

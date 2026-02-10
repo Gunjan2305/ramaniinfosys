@@ -14,12 +14,14 @@
 }
 
 .work-page-title {
-    font-size: 4rem;
+    flex: 1;
+    font-size: 44px;
     font-weight: 700;
-    margin-bottom: 1rem;
-    background: linear-gradient(135deg, #fff 0%, #aaa 100%);
-    background-clip: text;
+    color: #fff;
+    margin-bottom: 20px;
+    background: linear-gradient(90deg, #00BFFF, #8A2BE2);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 

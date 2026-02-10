@@ -145,56 +145,80 @@
     </div>
 
     <div class="privacy-content">
-        <p>At Ramani Infosys ("we," "our," or "us"), we are committed to protecting your privacy to ensure that you can
-            continue to trust us with your personal data. This Privacy Policy describes how we collect, use, and
-            disclose information when you visit our website or use our services.</p>
+        <p>At Ramani Infosys ("we," "our," or "us"), we are committed to protecting your privacy and ensuring the
+            security of your business data. This Privacy Policy outlines how we collect, use, disclose, and safeguard
+            your information when you visit our website or engage with our software development, consulting, and digital
+            services.</p>
 
         <h2>1. Information We Collect</h2>
-        <p>We may collect personal identification information from Users in a variety of ways, including, but not
-            limited to, when Users visit our site, register on the site, subscribe to the newsletter, and in connection
-            with other activities, services, features or resources we make available on our Site.</p>
+        <p>We collect information to provide better services to all our users—from figuring out basic stuff like which
+            language you speak, to more complex things like which ads you’ll find most useful or which services matter
+            most to you.</p>
         <ul>
-            <li>Name and Contact Data: We collect your name, email address, postal address, phone number, and other
-                similar contact data.</li>
-            <li>Credentials: We collect passwords, password hints, and similar security information used for
-                authentication and account access.</li>
-            <li>Demographic Data: We collect data about you such as your age, gender, country, and preferred language.
-            </li>
+            <li><strong>Personal Identification Information:</strong> Name, email address, phone number, company name,
+                and job title when you request a quote or contact us.</li>
+            <li><strong>Technical Data:</strong> IP address, browser type, operating system, and usage data when you
+                visit our website.</li>
+            <li><strong>Project Data:</strong> Information related to your project requirements, including
+                specifications, design files, and access credentials necessary for us to perform our services.</li>
         </ul>
 
         <h2>2. How We Use Your Information</h2>
-        <p>We use the information we collect to operate our business and provide you the services we offer. This
-            includes using data to improve our products and personalize your experiences. We also may use the data to
-            communicate with you, for example, informing you about your account, security updates and product
-            information.</p>
-        <p>We do not share your personal data with your consent or as necessary to complete any transaction or provide
-            any service you have requested or authorized.</p>
+        <p>We use the data we collect for the following purposes:</p>
+        <ul>
+            <li>To provide and maintain our Service (e.g., website development, app development, UI/UX design).</li>
+            <li>To notify you about changes to our Service.</li>
+            <li>To allow you to participate in interactive features of our Service when you choose to do so.</li>
+            <li>To provide customer support and respond to inquiries.</li>
+            <li>To monitor the usage of our Service and detect/prevent technical issues.</li>
+        </ul>
 
-        <h2>3. Data Protection</h2>
-        <p>We adopt appropriate data collection, storage and processing practices and security measures to protect
-            against unauthorized access, alteration, disclosure or destruction of your personal information, username,
-            password, transaction information and data stored on our Site.</p>
+        <h2>3. Intellectual Property & Client Data</h2>
+        <p>We understand the sensitivity of your proprietary information. Ramani Infosys adheres to strict
+            confidentiality standards:</p>
+        <ul>
+            <li><strong>Ownership:</strong> All custom code, designs, and intellectual property developed for the client
+                belong to the client upon full payment, as specified in our service agreements.</li>
+            <li><strong>Confidentiality:</strong> We do not disclose your project details, trade secrets, or business
+                strategies to third parties without your explicit consent.</li>
+            <li><strong>Source Code Security:</strong> Your source code and data are stored on secure, encrypted servers
+                with restricted access limited to the team members working on your project.</li>
+        </ul>
 
-        <h2>4. Third Party Websites</h2>
-        <p>Users may find advertising or other content on our Site that link to the sites and services of our partners,
-            suppliers, advertisers, sponsors, licensors and other third parties. We do not control the content or links
-            that appear on these sites and are not responsible for the practices employed by websites linked to or from
-            our Site.</p>
+        <h2>4. Data Security</h2>
+        <p>We implement industry-standard security measures, including SSL encryption, firewalls, and secure database
+            protocols, to protect your personal and business data. However, please be aware that no method of
+            transmission over the internet or method of electronic storage is 100% secure.</p>
 
-        <h2>5. Changes to This Privacy Policy</h2>
-        <p>Ramani Infosys has the discretion to update this privacy policy at any time. When we do, we will post a
-            notification on the main page of our Site or send you an email. We encourage Users to frequently check this
-            page for any changes to stay informed about how we are helping to protect the personal information we
-            collect.</p>
+        <h2>5. Sharing Your Information</h2>
+        <p>We do not sell, trade, or rent Users' personal identification information to others. We may share generic
+            aggregated demographic information not linked to any personal identification information regarding visitors
+            and users with our business partners, trusted affiliates, and advertisers for the purposes outlined above.
+        </p>
 
-        <h2>6. Contact Us</h2>
-        <p>If you have any questions about this Privacy Policy, the practices of this site, or your dealings with this
-            site, please contact us at:</p>
+        <h2>6. Third-Party Services</h2>
+        <p>Our website and services may contain links to or integrations with third-party sites (e.g., Shopify, AWS,
+            Azure, Google Analytics). We are not responsible for the privacy practices or content of these third-party
+            services. We encourage you to read their privacy policies.</p>
+
+        <h2>7. Your Rights</h2>
+        <p>Depending on your location, you may have rights regarding your data, including the right to access, correct,
+            or delete your personal information. To exercise these rights, please contact us.</p>
+
+        <h2>8. Changes to This Privacy Policy</h2>
+        <p>Ramani Infosys has the discretion to update this privacy policy at any time. When we do, we will revise the
+            updated date at the top of this page. We encourage Users to frequently check this page for any changes.</p>
+
+        <h2>9. Contact Us</h2>
+        <p>If you have any questions about this Privacy Policy, the practices of this site, or your dealings with us,
+            please contact us at:</p>
         <p>
             <strong>Ramani Infosys</strong><br>
             A-306, RJD Business Hub, Katargam,<br>
             Surat, 395004<br>
-            Email: hello@ramaniinfosys.com
+            Email: <a href="mailto:hello@ramaniinfosys.com"
+                style="color: #00c6ff; text-decoration: none;">hello@ramaniinfosys.com</a><br>
+            Phone: +91 9998579403
         </p>
     </div>
 

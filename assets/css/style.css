@@ -333,7 +333,7 @@ body {
 }
 
 .hero-content h1 {
-    font-size: 4rem;
+    font-size: 44px;
     line-height: 1.1;
     margin-bottom: 1.5rem;
     color: #fff;
@@ -342,6 +342,7 @@ body {
 .highlight {
     background: linear-gradient(90deg, #00BFFF, #8A2BE2);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     display: inline-block;
 }

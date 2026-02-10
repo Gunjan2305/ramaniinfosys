@@ -75,7 +75,7 @@
 
     <!-- Portfolio Header -->
     <section class="portfolio-header">
-        <div class="container">
+        <div class="container mobille-header">
             <h1>Our Portfolio</h1>
             <p>A curated showcase of our finest work across e-commerce, web development, and digital design.</p>
         </div>

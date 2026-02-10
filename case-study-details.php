@@ -114,54 +114,83 @@ if (!$study) {
 
     <style>
         .cs-hero {
-            height: 60vh;
-            position: relative;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            overflow: hidden;
+            min-height: 80vh;
+            padding-top: 140px;
+            /* Space for fixed header */
+            padding-bottom: 60px;
             background: #000;
             color: #fff;
-            text-align: center;
+            position: relative;
         }
 
-        .cs-hero-bg {
-            position: absolute;
-            top: 0;
-            left: 0;
+        .cs-hero-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        /* First Div: Image/Video */
+        .cs-hero-media {
+            position: relative;
+            width: 100%;
+            height: 500px;
+            /* Fixed height for consistency */
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .cs-hero-media img,
+        .cs-hero-media video {
             width: 100%;
             height: 100%;
             object-fit: cover;
-            opacity: 0.4;
-            z-index: 1;
+            display: block;
         }
 
+        /* Second Div: Content */
         .cs-hero-content {
-            position: relative;
-            z-index: 2;
-            max-width: 800px;
-            padding: 20px;
+            text-align: left;
         }
 
         .cs-hero h1 {
             font-size: 3.5rem;
-            margin-bottom: 1rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.1;
             background: linear-gradient(90deg, #fff, #aaa);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
 
         .cs-hero .subtitle {
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             color: var(--primary-color);
-            margin-bottom: 2rem;
+            margin-bottom: 1.5rem;
             font-weight: 600;
             text-transform: uppercase;
             letter-spacing: 2px;
+            display: inline-block;
+            background: rgba(0, 191, 255, 0.1);
+            /* Subtle badge bg */
+            padding: 8px 16px;
+            border-radius: 50px;
         }
 
+        .cs-hero p {
+            font-size: 1.2rem;
+            color: #ccc;
+            line-height: 1.8;
+            max-width: 600px;
+        }
+
+        /* Restored Content Section Styles */
         .cs-content-section {
-            padding: 80px 0;
+            padding: 50px 0;
             background: #050505;
             color: #ddd;
         }
@@ -192,8 +221,7 @@ if (!$study) {
 
         .cs-results {
             background: #111;
-            padding: 60px 0;
-            margin-top: 60px;
+            padding: 50px 0;
         }
 
         .results-container {
@@ -201,6 +229,11 @@ if (!$study) {
             margin: 0 auto;
             padding: 0 20px;
             text-align: center;
+        }
+
+        .results-container h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
         }
 
         .results-grid {
@@ -216,6 +249,8 @@ if (!$study) {
             border-radius: 15px;
             border: 1px solid rgba(255, 255, 255, 0.1);
             transition: transform 0.3s ease;
+            text-align: center;
+            /* Center content in card */
         }
 
         .result-card:hover {
@@ -224,28 +259,75 @@ if (!$study) {
         }
 
         .result-card h3 {
-            font-size: 1.5rem;
+            font-size: 2rem;
+            /* Larger arrow/icon */
             color: var(--primary-color);
-            margin-bottom: 0.5rem;
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        .result-card p {
+            font-size: 1.1rem;
+            color: #fff;
+            font-weight: 500;
         }
 
         .btn-back {
             display: inline-block;
-            margin-top: 40px;
-            padding: 10px 30px;
+            margin-top: 60px;
+            padding: 12px 35px;
             border: 1px solid var(--primary-color);
             color: var(--primary-color);
             text-decoration: none;
-            border-radius: 30px;
+            border-radius: 50px;
+            font-weight: 500;
             transition: all 0.3s;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
 
         .btn-back:hover {
             background: var(--primary-color);
             color: #000;
+            box-shadow: 0 0 20px rgba(0, 191, 255, 0.3);
+        }
+
+        @media (max-width: 1024px) {
+            .cs-hero-container {
+                grid-template-columns: 1fr;
+                gap: 40px;
+                text-align: center;
+            }
+
+            .cs-hero-content {
+                text-align: center;
+                order: 2;
+                /* Content below image on tablets if desired, or remove to keep above */
+            }
+
+            .cs-hero-media {
+                height: 400px;
+                order: 1;
+            }
+
+            .cs-hero p {
+                margin: 0 auto;
+            }
         }
 
         @media (max-width: 768px) {
+            .cs-hero {
+                padding-top: 120px;
+            }
+
+            .cs-hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .cs-hero-media {
+                height: 300px;
+            }
+
             .cs-grid {
                 grid-template-columns: 1fr;
                 gap: 40px;
@@ -253,10 +335,6 @@ if (!$study) {
 
             .results-grid {
                 grid-template-columns: 1fr;
-            }
-
-            .cs-hero h1 {
-                font-size: 2.5rem;
             }
         }
     </style>
@@ -316,24 +394,30 @@ if (!$study) {
 
     <!-- Case Study Hero -->
     <section class="cs-hero">
-        <?php if (isset($study['video']) && $study['video']): ?>
-            <video autoplay muted loop playsinline class="cs-hero-bg">
-                <source src="<?php echo $study['video']; ?>" type="video/mp4">
-            </video>
-        <?php else: ?>
-            <img src="<?php echo $study['image']; ?>" alt="<?php echo $study['title']; ?>" class="cs-hero-bg">
-        <?php endif; ?>
-
-        <div class="cs-hero-content">
-            <div class="subtitle">
-                <?php echo $study['subtitle']; ?>
+        <div class="cs-hero-container">
+            <!-- First Div: Media -->
+            <div class="cs-hero-media">
+                <?php if (isset($study['video']) && $study['video']): ?>
+                    <video autoplay muted loop playsinline>
+                        <source src="<?php echo $study['video']; ?>" type="video/mp4">
+                    </video>
+                <?php else: ?>
+                    <img src="<?php echo $study['image']; ?>" alt="<?php echo $study['title']; ?>">
+                <?php endif; ?>
             </div>
-            <h1>
-                <?php echo $study['title']; ?>
-            </h1>
-            <p>
-                <?php echo $study['description']; ?>
-            </p>
+
+            <!-- Second Div: Content -->
+            <div class="cs-hero-content">
+                <div class="subtitle">
+                    <?php echo $study['subtitle']; ?>
+                </div>
+                <h1>
+                    <?php echo $study['title']; ?>
+                </h1>
+                <p>
+                    <?php echo $study['description']; ?>
+                </p>
+            </div>
         </div>
     </section>
 

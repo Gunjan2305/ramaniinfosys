@@ -91,63 +91,79 @@
                 <button class="filter-btn" data-filter="design">Design</button>
             </div>
 
-            <div class="portfolio-grid">
-                <!-- Item 1: Shopify -->
-                <div class="portfolio-item Shopify" data-category="shopify">
-                    <img src="assets/img/image2.webp" alt="Shopify Store" class="portfolio-thumb">
-                    <div class="portfolio-overlay">
-                        <span class="portfolio-cat">Shopify</span>
-                        <h3 class="portfolio-title">Sustainable Fashion</h3>
+            <div class="portfolio-slider-wrapper">
+                <button class="slider-nav prev" aria-label="Previous Project">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M15 18l-6-6 6-6" />
+                    </svg>
+                </button>
+
+                <div class="portfolio-grid">
+                    <!-- Item 1: Shopify -->
+                    <div class="portfolio-item Shopify" data-category="shopify">
+                        <img src="assets/img/image2.webp" alt="Shopify Store" class="portfolio-thumb">
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-cat">Shopify</span>
+                            <h3 class="portfolio-title">Sustainable Fashion</h3>
+                        </div>
+                    </div>
+
+                    <!-- Item 2: .NET -->
+                    <div class="portfolio-item DotNet" data-category="dotnet">
+                        <img src="assets/img/success-brand -1.jpeg" alt=".NET App" class="portfolio-thumb">
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-cat">.NET Core</span>
+                            <h3 class="portfolio-title">Fintech Dashboard</h3>
+                        </div>
+                    </div>
+
+                    <!-- Item 3: Design -->
+                    <div class="portfolio-item Design" data-category="design">
+                        <img src="assets/img/image-1.webp" alt="Design UI" class="portfolio-thumb">
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-cat">UI/UX Design</span>
+                            <h3 class="portfolio-title">SaaS Landing Page</h3>
+                        </div>
+                    </div>
+
+                    <!-- Item 4: Shopify -->
+                    <div class="portfolio-item Shopify" data-category="shopify">
+                        <img src="assets/img/success-brand -2.jpeg" alt="Shopify Plus" class="portfolio-thumb">
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-cat">Shopify Plus</span>
+                            <h3 class="portfolio-title">Global Retailer</h3>
+                        </div>
+                    </div>
+
+                    <!-- Item 5: Angular -->
+                    <div class="portfolio-item DotNet" data-category="dotnet">
+                        <img src="assets/img/success-brand-3.jpeg" alt="Angular App" class="portfolio-thumb">
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-cat">Angular</span>
+                            <h3 class="portfolio-title">Healthcare Portal</h3>
+                        </div>
+                    </div>
+
+                    <!-- Item 6: Motion -->
+                    <div class="portfolio-item Design" data-category="design">
+                        <video autoplay muted loop playsinline class="portfolio-thumb"
+                            style="object-fit: cover; width: 100%; height: 100%;">
+                            <source src="assets/video/banner-video.mp4" type="video/mp4">
+                        </video>
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-cat">Motion Design</span>
+                            <h3 class="portfolio-title">Interactive Campaign</h3>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Item 2: .NET -->
-                <div class="portfolio-item DotNet" data-category="dotnet">
-                    <img src="assets/img/success-brand -1.jpeg" alt=".NET App" class="portfolio-thumb">
-                    <div class="portfolio-overlay">
-                        <span class="portfolio-cat">.NET Core</span>
-                        <h3 class="portfolio-title">Fintech Dashboard</h3>
-                    </div>
-                </div>
-
-                <!-- Item 3: Design -->
-                <div class="portfolio-item Design" data-category="design">
-                    <img src="assets/img/image-1.webp" alt="Design UI" class="portfolio-thumb">
-                    <div class="portfolio-overlay">
-                        <span class="portfolio-cat">UI/UX Design</span>
-                        <h3 class="portfolio-title">SaaS Landing Page</h3>
-                    </div>
-                </div>
-
-                <!-- Item 4: Shopify -->
-                <div class="portfolio-item Shopify" data-category="shopify">
-                    <img src="assets/img/success-brand -2.jpeg" alt="Shopify Plus" class="portfolio-thumb">
-                    <div class="portfolio-overlay">
-                        <span class="portfolio-cat">Shopify Plus</span>
-                        <h3 class="portfolio-title">Global Retailer</h3>
-                    </div>
-                </div>
-
-                <!-- Item 5: Angular -->
-                <div class="portfolio-item DotNet" data-category="dotnet">
-                    <img src="assets/img/success-brand-3.jpeg" alt="Angular App" class="portfolio-thumb">
-                    <div class="portfolio-overlay">
-                        <span class="portfolio-cat">Angular</span>
-                        <h3 class="portfolio-title">Healthcare Portal</h3>
-                    </div>
-                </div>
-
-                <!-- Item 6: Motion -->
-                <div class="portfolio-item Design" data-category="design">
-                    <video autoplay muted loop playsinline class="portfolio-thumb"
-                        style="object-fit: cover; width: 100%; height: 100%;">
-                        <source src="assets/video/banner-video.mp4" type="video/mp4">
-                    </video>
-                    <div class="portfolio-overlay">
-                        <span class="portfolio-cat">Motion Design</span>
-                        <h3 class="portfolio-title">Interactive Campaign</h3>
-                    </div>
-                </div>
+                <button class="slider-nav next" aria-label="Next Project">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M9 18l6-6-6-6" />
+                    </svg>
+                </button>
             </div>
         </div>
     </section>
@@ -345,9 +361,11 @@
             });
         }
 
+
         // Filter Logic
         const filterBtns = document.querySelectorAll('.filter-btn');
         const items = document.querySelectorAll('.portfolio-item');
+        const sliderGrid = document.querySelector('.portfolio-grid');
 
         filterBtns.forEach(btn => {
             btn.addEventListener('click', () => {
@@ -367,6 +385,14 @@
                         item.style.display = 'none';
                     }
                 });
+
+                // Reset scroll position when filtering
+                if (sliderGrid) {
+                    sliderGrid.scrollTo({
+                        left: 0,
+                        behavior: 'smooth'
+                    });
+                }
             });
         });
 
@@ -374,6 +400,29 @@
         items.forEach(item => {
             item.style.transition = 'opacity 0.3s ease';
         });
+
+        // Slider Navigation Logic
+        const prevBtn = document.querySelector('.slider-nav.prev');
+        const nextBtn = document.querySelector('.slider-nav.next');
+
+        if (sliderGrid && prevBtn && nextBtn) {
+            nextBtn.addEventListener('click', () => {
+                const scrollAmount = 400 + 30; // Item width + gap
+                sliderGrid.scrollBy({
+                    left: scrollAmount,
+                    behavior: 'smooth'
+                });
+            });
+
+            prevBtn.addEventListener('click', () => {
+                const scrollAmount = 400 + 30; // Item width + gap
+                sliderGrid.scrollBy({
+                    left: -scrollAmount,
+                    behavior: 'smooth'
+                });
+            });
+        }
+
     </script>
     <!-- Audit Modal Logic -->
     <script src="assets/js/audit-modal.js"></script>

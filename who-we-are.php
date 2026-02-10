@@ -179,7 +179,7 @@
 
     <!-- Timeline / History Section (New) -->
     <section class="section-padding" style="background: #0e0e0e;">
-        <div class="container">
+        <div class="container mobille-header">
             <h2 class="section-title reveal-on-scroll">Our Journey</h2>
             <div class="story-content reveal-on-scroll" style="text-align: center; max-width: 800px; margin: 0 auto;">
                 <p><strong>2015:</strong> Founded Ramani Infosys in Surat with a focus on .NET development.</p>

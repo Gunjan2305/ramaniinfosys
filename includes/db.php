@@ -17,7 +17,7 @@ if ($is_localhost) {
     // Local Database Configuration (XAMPP Default)
     $servername = "localhost";
     $username = "root";
-    $password = "Srushti@02";
+    $password = "";
     $dbname = "ramani_infosys_db";
 } else {
     // Live Database Configuration (Hostinger/cPanel)
@@ -25,7 +25,7 @@ if ($is_localhost) {
     $username = "u214631115_ramani_infosys";
     $dbname = "u214631115_ramani_infosys";
     // TODO: Please replace 'YOUR_LIVE_DATABASE_PASSWORD' with your actual live database password
-    $password = "YOUR_LIVE_DATABASE_PASSWORD";
+    $password = "Srushti@02";
 }
 
 // Enable error reporting for mysqli to throw exceptions (default in PHP 8+)

@@ -342,55 +342,7 @@ if (!$study) {
 
 <body>
 
-    <header class="sticky-header">
-        <div class="container">
-            <button class="mobile-menu-btn" aria-label="Toggle Menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-
-            <div class="logo">
-                <a href="./">
-                    <img src="assets/img/logo.jpeg" alt="Ramani Infosys Logo">
-                </a>
-            </div>
-
-            <nav class="nav-menu">
-                <ul>
-                    <li><a href="services.php">Services</a></li>
-                    <li><a href="our-work.php">Our Work</a></li>
-                    <li><a href="who-we-are.php">Who we are</a></li>
-                    <li><a href="portfolio.php">Portfolio</a></li>
-                </ul>
-            </nav>
-
-            <div class="header-actions">
-                <a href="#" class="btn btn-outline">Get A Free Audit</a>
-                <a href="contact-us.php" class="btn btn-primary">Get in Touch</a>
-            </div>
-        </div>
-    </header>
-
-    <!-- Mobile Navigation Drawer -->
-    <div class="mobile-nav-overlay"></div>
-    <div class="mobile-nav-drawer">
-        <div class="mobile-nav-logo">
-            <a href="./">
-                <img src="assets/img/logo.jpeg" alt="Ramani Infosys Logo">
-            </a>
-        </div>
-        <ul class="mobile-nav-list">
-            <li><a href="services.php">Services</a></li>
-            <li><a href="our-work.php">Our Work</a></li>
-            <li><a href="who-we-are.php">Who we are</a></li>
-            <li><a href="portfolio.php">Portfolio</a></li>
-        </ul>
-        <div class="mobile-cta-actions">
-            <a href="#" class="btn btn-outline" style="width: 100%; text-align: center;">Get A Free Audit</a>
-            <a href="contact-us.php" class="btn btn-primary" style="width: 100%; text-align: center;">Get in Touch</a>
-        </div>
-    </div>
+    <?php include 'includes/header.php'; ?>
 
     <!-- Case Study Hero -->
     <section class="cs-hero">
@@ -458,100 +410,7 @@ if (!$study) {
     </section>
 
     <!-- Footer -->
-    <footer class="site-footer">
-        <div class="footer-container">
-            <!-- 1. Header CTA -->
-            <div class="footer-cta-bar">
-                <div class="footer-cta-text">
-                    <h2>Ready to get started?<br><span>Let's talk.</span></h2>
-                </div>
-                <a href="contact-us.php" class="btn-footer-cta">Get In Touch</a>
-            </div>
-
-            <!-- 2. Main Content -->
-            <div class="footer-main">
-                <div class="footer-brand-info footer-col-wrapper">
-                    <div class="footer-logo">ramaniinfosys</div>
-                    <div class="footer-contact-item">
-                        <span>218 Thornridge Cir. Syracuse, Connecticut 35624</span>
-                    </div>
-                    <div class="footer-contact-item">
-                        <span>A-306, RJD Business Hub, Katargam, Surat, 395004</span>
-                    </div>
-                    <div class="footer-contact-item">
-                        <span>+91 9998579403</span>
-                    </div>
-                    <div class="footer-contact-item">
-                        <span>hello@ramaniinfosys.com</span>
-                    </div>
-                    <!-- Social Icons -->
-                    <div class="footer-social-links">
-                        <a href="#" class="social-btn">FB</a>
-                        <a href="#" class="social-btn">LI</a>
-                        <a href="#" class="social-btn">TW</a>
-                        <a href="#" class="social-btn">IG</a>
-                    </div>
-                </div>
-
-                <div class="footer-col footer-col-wrapper">
-                    <h4>Shopify Services</h4>
-                    <ul class="footer-links">
-                        <li><a href="#">Shopify Store Design & Development</a></li>
-                        <li><a href="#">Migrate to Shopify</a></li>
-                        <li><a href="#">Customize an Existing Shopify Store</a></li>
-                        <li><a href="#">Shopify Plus Services</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-col footer-col-wrapper">
-                    <h4>Ramani Insights</h4>
-                    <ul class="footer-links">
-                        <li><a href="services.php">Explore Services</a></li>
-                        <li><a href="our-work.php">Our Work</a></li>
-                        <li><a href="who-we-are.php">Who we are</a></li>
-                        <li><a href="portfolio.php">Portfolio</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-col footer-col-wrapper">
-                    <h4>GCC Countries</h4>
-                    <ul class="footer-links">
-                        <li><a href="#">UAE</a></li>
-                        <li><a href="#">Saudi Arabia</a></li>
-                        <!-- etc -->
-                    </ul>
-                </div>
-
-            </div>
-
-            <div class="footer-bottom">
-                <div>© 2025, Ramani Software Agency</div>
-                <div><a href="privacy-policy.php" class="footer-policy-link">Privacy Policy</a></div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Scripts -->
-    <script>
-        const mobileBtn = document.querySelector('.mobile-menu-btn');
-        const mobileDrawer = document.querySelector('.mobile-nav-drawer');
-        const mobileOverlay = document.querySelector('.mobile-nav-overlay');
-
-        if (mobileBtn) {
-            mobileBtn.addEventListener('click', () => {
-                mobileBtn.classList.toggle('active');
-                mobileDrawer.classList.toggle('active');
-                mobileOverlay.classList.toggle('active');
-            });
-        }
-        if (mobileOverlay) {
-            mobileOverlay.addEventListener('click', () => {
-                mobileBtn.classList.remove('active');
-                mobileDrawer.classList.remove('active');
-                mobileOverlay.classList.remove('active');
-            });
-        }
-    </script>
+    <?php include 'includes/footer.php'; ?>
 </body>
 
 </html>

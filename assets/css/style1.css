@@ -92,6 +92,12 @@ body {
     opacity: 1;
 }
 
+.nav-menu a.active {
+    color: var(--primary-color);
+    font-weight: 600;
+    opacity: 1;
+}
+
 /* Header Actions */
 .header-actions {
     display: flex;
@@ -605,6 +611,7 @@ body {
         transform: translateX(100px) scale(0.9);
     }
 }
+
 /* Audit Modal Styles */
 .audit-modal-overlay {
     position: fixed;
@@ -794,6 +801,7 @@ body {
         padding: 0.8rem;
     }
 }
+
 /* Case Study Section */
 .case-study-section {
     padding: 50px 0;
@@ -1022,6 +1030,7 @@ body {
         right: 2px;
     }
 }
+
 /* Contact Page Styles */
 /* Hero Section */
 .contact-hero {
@@ -1183,6 +1192,7 @@ body {
         padding-top: 6rem;
     }
 }
+
 /* CTA Testimonial Section */
 .cta-testimonial-section {
     background-color: #000;
@@ -1559,6 +1569,7 @@ body {
         text-align: center;
     }
 }
+
 /* Experts Section Styles */
 .experts-section {
     padding: 50px 0;
@@ -1812,6 +1823,7 @@ body {
         /* Simplify on mobile if too crowded */
     }
 }
+
 /* FAQ Section */
 .faq-section {
     background-color: #050505;
@@ -1960,6 +1972,7 @@ body {
         font-size: 1rem;
     }
 }
+
 /* Footer Styles */
 .site-footer {
     background-color: #050505;
@@ -2328,6 +2341,7 @@ body {
         width: 100%;
     }
 }
+
 /* Vertical Lines Background */
 .vertical-lines {
     position: absolute;
@@ -2386,6 +2400,7 @@ body {
         top: 200%;
     }
 }
+
 /* Our Work Page Styles */
 .work-page-header {
     background-color: #050505;
@@ -2555,6 +2570,7 @@ body {
         height: 250px;
     }
 }
+
 /* Technology Partners Section */
 .partners-section {
     padding: 50px 0;
@@ -2732,6 +2748,7 @@ body {
     .partners-container {
         padding: 0 1rem;
     }
+
     .partners-grid {
         grid-template-columns: 1fr;
     }
@@ -2740,6 +2757,7 @@ body {
         font-size: 2.5rem;
     }
 }
+
 /* Portfolio Page Styles */
 .portfolio-header {
     padding: 150px 0 50px;
@@ -2953,9 +2971,10 @@ body {
 
 /* Responsive */
 @media (max-width: 1024px) {
-    .portfolio-content{
+    .portfolio-content {
         padding: 0 16px;
     }
+
     .portfolio-content .container {
         flex-direction: column;
         gap: 30px;
@@ -3049,6 +3068,7 @@ body {
         justify-content: center;
     }
 }
+
 /* Resources Section */
 .resources-section {
     background-color: #000;
@@ -3145,6 +3165,7 @@ body {
         font-size: 2rem;
     }
 }
+
 /* Services Page Specific Styles */
 
 /* Service Hero */
@@ -3381,6 +3402,7 @@ body {
         display: none;
     }
 }
+
 /* Services Accordion Section */
 .services-accordion-section {
     padding: 50px 0;
@@ -3681,6 +3703,7 @@ body {
         left: 15%;
     }
 }
+
 /* Tech Slider Section */
 .tech-slider-section {
     padding: 3rem 0;
@@ -3749,6 +3772,7 @@ body {
 .tech-slider-section:hover .tech-track {
     animation-play-state: paused;
 }
+
 /* Stats Grid Section */
 .stats-grid-section {
     padding: 50px 0;
@@ -4059,6 +4083,7 @@ body {
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
 /* Who We Are Page Specific Styles */
 :root {
     --primary-color: #00c6ff;
@@ -4112,12 +4137,12 @@ body {
 
 @media (max-width: 768px) {
     .mobille-header {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    /* Center align title */
-    width: 100%;
-}
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* Center align title */
+        width: 100%;
+    }
 
     .mobille-header .section-title {
         text-align: left;

@@ -3509,8 +3509,8 @@ body {
 }
 
 .accordion-item.active .accordion-content {
-    max-height: 800px;
-    /* Arbitrary large height */
+    max-height: 3000px;
+    /* Increased from 800px to prevent cutoff on mobile */
     opacity: 1;
 }
 
@@ -3701,6 +3701,8 @@ body {
     .vc-main-img {
         width: 70%;
         left: 15%;
+        max-height: 100%;
+        object-fit: contain;
     }
 }
 

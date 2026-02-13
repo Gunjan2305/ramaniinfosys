@@ -11,8 +11,9 @@ $current_page = basename($_SERVER['PHP_SELF']);
         </button>
 
         <div class="logo">
-            <a href="./">
-                <img src="assets/img/logo.jpeg" alt="Ramani Infosys Logo">
+            <a href="./" class="logo-link">
+                <img src="assets/img/favicon-bg-remove.png" alt="Ramani Infosys Logo">
+                <span class="logo-text"><span>Ramani</span><span class="highlight-text">Infosys</span></span>
             </a>
         </div>
 
@@ -40,8 +41,9 @@ $current_page = basename($_SERVER['PHP_SELF']);
 <div class="mobile-nav-overlay"></div>
 <div class="mobile-nav-drawer">
     <div class="mobile-nav-logo">
-        <a href="./">
-            <img src="assets/img/logo.jpeg" alt="Ramani Infosys Logo">
+        <a href="./" class="logo-link">
+            <img src="assets/img/favicon-bg-remove.png" alt="Ramani Infosys Logo">
+            <span class="logo-text"><span>Ramani</span><span class="highlight-text">Infosys</span></span>
         </a>
     </div>
     <ul class="mobile-nav-list">

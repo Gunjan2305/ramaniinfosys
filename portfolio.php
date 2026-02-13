@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Ramani Infosys</title>
-    <link rel="stylesheet" href="assets/css/style1.css">
+    <link rel="stylesheet" href="assets/css/style2.css">
 
 
     <link rel="icon" type="image/jpeg" href="assets/img/favicon.jpeg">
@@ -117,7 +117,7 @@
 
     <!-- Footer -->
     <?php include 'includes/footer.php'; ?>
-    
+
     <script>
         // Force page to start at the top on reload
         if (history.scrollRestoration) {
@@ -174,7 +174,7 @@
                     // But wait, the loop below inside the original code was:
                     // if (filter === 'all' || item.getAttribute('data-category') === filter) { ... }
                     // However, we need to iterate over items. Let's fix the logic to match the original intent properly.
-                    
+
                     if (filter === 'all' || item.getAttribute('data-category') === filter) {
                         item.style.display = 'block';
                         // Add fade in animation if desired

@@ -4,9 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services - Ramani Infosys</title>
-    <link rel="stylesheet" href="assets/css/style1.css">
+    <!-- Advanced SEO: Phase 5 - Conversion-Optimized Service Pages -->
+    <title>Enterprise Development Services | .NET, Angular, React & Shopify Experts - Ramani Infosys</title>
+    <meta name="description"
+        content="End-to-end software development services. We specialize in .NET Core, Angular, React, and Shopify Plus solutions for scalable, high-performance web applications.">
 
+    <!-- Canonical Tag -->
+    <link rel="canonical" href="https://ramaniinfosys.com/services" />
+
+    <link rel="stylesheet" href="assets/css/style1.css">
 
     <link rel="icon" type="image/jpeg" href="assets/img/favicon.jpeg">
     <link rel="shortcut icon" type="image/jpeg" href="assets/img/favicon.jpeg">
@@ -16,6 +22,50 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Advanced SEO: Phase 7 - Schema Markup (Service) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "serviceType": "Software Development",
+      "provider": {
+        "@type": "Organization",
+        "name": "Ramani Infosys"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Global"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Development Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Shopify Development"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Custom .NET Software"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Angular & React Web Apps"
+            }
+          }
+        ]
+      }
+    }
+    </script>
 </head>
 
 <body>
@@ -31,7 +81,7 @@
             <h1>Expert Solutions for <br><span class="highlight">Modern Businesses</span></h1>
             <p>We combine strategic thinking with engineering excellence to build scalable .NET, Angular, and e-commerce
                 platforms.</p>
-            <div class="hero-actions">
+            <div class="hero-actions" style="padding: 0px 5px">
                 <a href="#services-grid" class="btn btn-primary btn-large">Our Capabilities</a>
                 <a href="#process" class="btn btn-outline btn-large" style="margin-left: 16px;">How We Work</a>
             </div>
@@ -271,7 +321,7 @@
 
     <!-- Footer -->
     <?php include 'includes/footer.php'; ?>
-    
+
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 
@@ -327,4 +377,5 @@
     </script>
 
 </body>
+
 </html>

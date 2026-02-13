@@ -4,9 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ramani Infosys - Digital Solutions</title>
-    <link rel="stylesheet" href="assets/css/style1.css">
+    <!-- Advanced SEO: Phase 1 & 2 - Positioning & Keywords -->
+    <title>Ramani Infosys — Shopify & Custom Software Experts | Web & App Development</title>
+    <meta name="description"
+        content="Ramani Infosys is a premier Shopify development and custom software agency. We build scalable ecommerce stores, enterprise apps, and AI solutions to drive your revenue growth.">
 
+    <!-- Canonical Tag (Phase 7: Technical SEO) -->
+    <link rel="canonical" href="https://ramaniinfosys.com/" />
+
+    <link rel="stylesheet" href="assets/css/style1.css">
 
     <link rel="icon" type="image/jpeg" href="assets/img/favicon.jpeg">
     <link rel="shortcut icon" type="image/jpeg" href="assets/img/favicon.jpeg">
@@ -16,6 +22,64 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Advanced SEO: Phase 7 - Schema Markup (Organization) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Ramani Infosys - Shopify & Custom Software Experts",
+      "url": "https://ramaniinfosys.com",
+      "logo": "https://ramaniinfosys.com/assets/img/logo.jpeg",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+91-9998579403",
+        "contactType": "customer service"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/company/ramaniinfosys",
+        "https://twitter.com/ramaniinfosys",
+        "https://www.facebook.com/ramaniinfosys"
+      ]
+    }
+    </script>
+
+    <!-- Advanced SEO: Phase 7 - Schema Markup (FAQPage) for the FAQ section -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "Shopify vs. Shopify Plus – Which one is right for our business?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Shopify is great for small to medium-sized businesses, while Shopify Plus is designed for high-volume enterprise brands. Plus offers unlimited staff accounts, advanced automation with Shopify Flow, customizable checkout, and higher API limits."
+        }
+      }, {
+        "@type": "Question",
+        "name": "What is the typical timeline to launch a Shopify store?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A standard Shopify build typically takes 4–8 weeks, while complex Shopify Plus implementations with custom integrations may take 3–6 months depending on requirements."
+        }
+      }, {
+        "@type": "Question",
+        "name": "Can our existing site be migrated to Shopify without losing any data?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, we specialize in seamless migrations. We transfer products, customers, orders, and SEO settings (redirects) to ensure you don't lose traffic or data during the transition."
+        }
+      }, {
+        "@type": "Question",
+        "name": "What are the benefits of working with a Shopify Partner agency?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "As a Shopify Partner, we have access to exclusive development tools, priority support, and beta features. We follow best practices to ensure your store is scalable, secure, and optimized for sales."
+        }
+      }]
+    }
+    </script>
 </head>
 
 <body>

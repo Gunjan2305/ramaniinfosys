@@ -4,9 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Work - Ramani Infosys</title>
-    <link rel="stylesheet" href="assets/css/style1.css">
+    <!-- Advanced SEO: Phase 5 - Conversion & Proof -->
+    <title>Our Work & Case Studies | Shopify & Custom Software Portfolio - Ramani Infosys</title>
+    <meta name="description"
+        content="See how Ramani Infosys delivers results. Browse our case studies in Shopify development, enterprise software, and app creation. Real results for scaling brands.">
 
+    <!-- Canonical Tag -->
+    <link rel="canonical" href="https://ramaniinfosys.com/our-work" />
+
+    <link rel="stylesheet" href="assets/css/style1.css">
 
     <link rel="icon" type="image/jpeg" href="assets/img/favicon.jpeg">
     <link rel="shortcut icon" type="image/jpeg" href="assets/img/favicon.jpeg">
@@ -14,6 +20,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Advanced SEO: Phase 7 - Schema Markup (CollectionPage) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "name": "Our Work Portfolio",
+      "description": "A collection of our successful software and ecommerce projects.",
+      "url": "https://ramaniinfosys.com/our-work"
+    }
+    </script>
 </head>
 
 <body>

@@ -4,9 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Who We Are - Ramani Infosys</title>
-    <link rel="stylesheet" href="assets/css/style1.css">
+    <!-- Advanced SEO: Phase 9 - EEAT & Brand -->
+    <title>About Ramani Infosys - Software Agency | The Team Behind Your Growth</title>
+    <meta name="description"
+        content="Meet Ramani Infosys, the team driving digital transformation. Learn about our mission, our Shopify & software experts, and why brands trust us to scale their business.">
 
+    <!-- Canonical Tag -->
+    <link rel="canonical" href="https://ramaniinfosys.com/who-we-are" />
+
+    <link rel="stylesheet" href="assets/css/style1.css">
 
     <link rel="icon" type="image/jpeg" href="assets/img/favicon.jpeg">
     <link rel="shortcut icon" type="image/jpeg" href="assets/img/favicon.jpeg">
@@ -14,6 +20,21 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Advanced SEO: Phase 7 - Schema Markup (AboutPage) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AboutPage",
+      "mainEntity": {
+        "@type": "Organization",
+        "name": "Ramani Infosys",
+        "description": "A premier Shopify development and custom software agency based in India.",
+        "foundingDate": "2020",
+        "url": "https://ramaniinfosys.com/who-we-are"
+      }
+    }
+    </script>
 </head>
 
 <body>
@@ -145,7 +166,7 @@
 
     <!-- Footer -->
     <?php include 'includes/footer.php'; ?>
-    
+
     <script>
         // Reveal on Scroll Animation with Fallback
         document.addEventListener('DOMContentLoaded', () => {

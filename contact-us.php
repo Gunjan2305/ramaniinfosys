@@ -4,9 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - Ramani Infosys</title>
-    <link rel="stylesheet" href="assets/css/style1.css">
+    <!-- Advanced SEO: Phase 9 - EEAT & Local Business Context -->
+    <title>Contact Ramani Infosys | Get a Quote for Shopify & Software Development</title>
+    <meta name="description"
+        content="Ready to scale your business? Contact Ramani Infosys for a free consultation on Shopify development, custom software, and app solutions. Based in India, serving clients globally.">
 
+    <!-- Canonical Tag -->
+    <link rel="canonical" href="https://ramaniinfosys.com/contact-us" />
+
+    <link rel="stylesheet" href="assets/css/style1.css">
 
     <link rel="icon" type="image/jpeg" href="assets/img/favicon.jpeg">
     <link rel="shortcut icon" type="image/jpeg" href="assets/img/favicon.jpeg">
@@ -14,6 +20,29 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Advanced SEO: Phase 7 - Schema Markup (LocalBusiness) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ContactPage",
+      "mainEntity": {
+        "@type": "LocalBusiness",
+        "name": "Ramani Infosys",
+        "image": "https://ramaniinfosys.com/assets/img/logo.jpeg",
+        "telephone": "+91-9998579403",
+        "email": "hello@ramaniinfosys.com",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "A-306, RJD Business Hub, Katargam",
+          "addressLocality": "Surat",
+          "postalCode": "395004",
+          "addressCountry": "IN"
+        },
+        "url": "https://ramaniinfosys.com/contact-us"
+      }
+    }
+    </script>
 </head>
 
 <body>
@@ -75,7 +104,7 @@
 
     <!-- Footer -->
     <?php include 'includes/footer.php'; ?>
-    
+
     <!-- Scripts -->
     <script>
         // Handle Contact Form

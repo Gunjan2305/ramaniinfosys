@@ -43,87 +43,161 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <title>Admin Login - Ramani Infosys</title>
     <link rel="icon" type="image/jpeg" href="../assets/img/favicon.jpeg">
     <link rel="shortcut icon" type="image/jpeg" href="../assets/img/favicon.jpeg">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Main Style -->
+    <link rel="stylesheet" href="../assets/css/style2.css">
+
     <style>
         body {
             margin: 0;
             padding: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f0f2f5;
+            font-family: 'Outfit', sans-serif;
+            background-color: #000;
             display: flex;
             align-items: center;
             justify-content: center;
             height: 100vh;
+            /* Radial gradient background for premium feel */
+            background: radial-gradient(circle at center, #111 0%, #000 100%);
         }
 
         .login-container {
-            background: #fff;
-            padding: 2rem;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            background: rgba(20, 20, 20, 0.95);
+            padding: 3rem;
+            border-radius: 20px;
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.6);
+            border: 1px solid rgba(255, 255, 255, 0.1);
             width: 100%;
-            max-width: 400px;
+            max-width: 420px;
+            text-align: center;
+            position: relative;
+            z-index: 10;
+        }
+
+        /* Glow effect behind the card */
+        .login-container::before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            background: linear-gradient(45deg, #00BFFF, transparent, #8A2BE2);
+            z-index: -1;
+            border-radius: 22px;
+            opacity: 0.3;
+            filter: blur(20px);
         }
 
         .login-container h2 {
-            text-align: center;
-            margin-bottom: 1.5rem;
-            color: #333;
+            margin-bottom: 2rem;
+            color: #fff;
+            font-size: 2rem;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+        
+        .login-container h2 span {
+            background: linear-gradient(90deg, #00BFFF, #8A2BE2);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
 
         .form-group {
-            margin-bottom: 1rem;
+            margin-bottom: 1.5rem;
+            text-align: left;
         }
 
         .form-group label {
             display: block;
             margin-bottom: 0.5rem;
-            color: #666;
+            color: #ccc;
+            font-size: 0.9rem;
+            font-weight: 500;
         }
 
         .form-group input {
             width: 100%;
-            padding: 0.75rem;
-            border: 1px solid #ddd;
-            border-radius: 4px;
+            padding: 1rem;
+            background: #222;
+            border: 1px solid #333;
+            border-radius: 10px;
+            color: #fff;
+            font-family: 'Outfit', sans-serif;
+            font-size: 1rem;
             box-sizing: border-box;
+            transition: all 0.3s ease;
+        }
+
+        .form-group input:focus {
+            outline: none;
+            border-color: #00BFFF;
+            box-shadow: 0 0 15px rgba(0, 191, 255, 0.2);
+            background: #2a2a2a;
         }
 
         .btn-login {
             width: 100%;
-            padding: 0.75rem;
-            background: #007bff;
+            padding: 1rem;
+            background: linear-gradient(90deg, #00BFFF, #8A2BE2);
             color: #fff;
             border: none;
-            border-radius: 4px;
+            border-radius: 50px;
             cursor: pointer;
-            font-size: 1rem;
-            transition: background 0.3s;
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-top: 1rem;
+            transition: all 0.3s ease;
         }
 
         .btn-login:hover {
-            background: #0056b3;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(0, 191, 255, 0.4);
+            filter: brightness(1.1);
         }
 
         .error {
-            color: #dc3545;
-            text-align: center;
-            margin-bottom: 1rem;
+            background: rgba(220, 53, 69, 0.2);
+            border: 1px solid rgba(220, 53, 69, 0.5);
+            color: #ff6b6b;
+            padding: 0.8rem;
+            border-radius: 8px;
+            margin-bottom: 1.5rem;
+            font-size: 0.9rem;
         }
 
         .back-link {
-            display: block;
+            display: inline-block;
             text-align: center;
-            margin-top: 1rem;
+            margin-top: 2rem;
             text-decoration: none;
-            color: #666;
+            color: #888;
             font-size: 0.9rem;
+            transition: color 0.3s;
+        }
+
+        .back-link:hover {
+            color: #00BFFF;
+        }
+        
+        .default-creds {
+             text-align:center; 
+             font-size: 0.8rem; 
+             color:#555; 
+             margin-top:1.5rem;
         }
     </style>
 </head>
 
 <body>
     <div class="login-container">
-        <h2>Admin Login</h2>
+        <h2>Login to <br> <span>Ramani Infosys</span></h2>
         <?php if ($error): ?>
             <div class="error">
                 <?php echo htmlspecialchars($error); ?>
@@ -132,16 +206,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <form method="POST" action="">
             <div class="form-group">
                 <label for="username">Username</label>
-                <input type="text" id="username" name="username" required>
+                <input type="text" id="username" name="username" required placeholder="Enter your username">
             </div>
             <div class="form-group">
                 <label for="password">Password</label>
-                <input type="password" id="password" name="password" required>
+                <input type="password" id="password" name="password" required placeholder="Enter your password">
             </div>
             <button type="submit" class="btn-login">Login</button>
         </form>
         <a href="../" class="back-link">← Back to Website</a>
-        <p style="text-align:center; font-size: 0.8rem; color:#999; margin-top:1rem;">(Default: admin / admin123)</p>
     </div>
 </body>
 

@@ -49,7 +49,8 @@
                 <div class="portfolio-grid">
                     <!-- Item 1: Shopify -->
                     <div class="portfolio-item Shopify" data-category="shopify">
-                        <img src="assets/img/image2.webp" alt="Shopify Store" class="portfolio-thumb">
+                        <img src="assets/img/brand_success_story_luxury.svg" alt="Shopify Store"
+                            class="portfolio-thumb">
                         <div class="portfolio-overlay">
                             <span class="portfolio-cat">Shopify</span>
                             <h3 class="portfolio-title">Sustainable Fashion</h3>
@@ -58,7 +59,7 @@
 
                     <!-- Item 2: .NET -->
                     <div class="portfolio-item DotNet" data-category="dotnet">
-                        <img src="assets/img/success-brand -1.jpeg" alt=".NET App" class="portfolio-thumb">
+                        <img src="assets/img/brand_success_story_main.svg" alt=".NET App" class="portfolio-thumb">
                         <div class="portfolio-overlay">
                             <span class="portfolio-cat">.NET Core</span>
                             <h3 class="portfolio-title">Fintech Dashboard</h3>
@@ -67,7 +68,7 @@
 
                     <!-- Item 3: Design -->
                     <div class="portfolio-item Design" data-category="design">
-                        <img src="assets/img/image-1.webp" alt="Design UI" class="portfolio-thumb">
+                        <img src="assets/img/brand_success_story_analytics.svg" alt="Design UI" class="portfolio-thumb">
                         <div class="portfolio-overlay">
                             <span class="portfolio-cat">UI/UX Design</span>
                             <h3 class="portfolio-title">SaaS Landing Page</h3>
@@ -76,7 +77,8 @@
 
                     <!-- Item 4: Shopify -->
                     <div class="portfolio-item Shopify" data-category="shopify">
-                        <img src="assets/img/success-brand -2.jpeg" alt="Shopify Plus" class="portfolio-thumb">
+                        <img src="assets/img/brand_success_story_fintech.svg" alt="Shopify Plus"
+                            class="portfolio-thumb">
                         <div class="portfolio-overlay">
                             <span class="portfolio-cat">Shopify Plus</span>
                             <h3 class="portfolio-title">Global Retailer</h3>
@@ -85,7 +87,8 @@
 
                     <!-- Item 5: Angular -->
                     <div class="portfolio-item DotNet" data-category="dotnet">
-                        <img src="assets/img/success-brand-3.jpeg" alt="Angular App" class="portfolio-thumb">
+                        <img src="assets/img/brand_success_story_healthcare.svg" alt="Angular App"
+                            class="portfolio-thumb">
                         <div class="portfolio-overlay">
                             <span class="portfolio-cat">Angular</span>
                             <h3 class="portfolio-title">Healthcare Portal</h3>
@@ -94,10 +97,9 @@
 
                     <!-- Item 6: Motion -->
                     <div class="portfolio-item Design" data-category="design">
-                        <video autoplay muted loop playsinline class="portfolio-thumb"
+                        <img src="assets/img/brand_success_story_immersive.svg" alt="Motion" class="portfolio-thumb"
                             style="object-fit: cover; width: 100%; height: 100%;">
-                            <source src="assets/video/banner-video.mp4" type="video/mp4">
-                        </video>
+
                         <div class="portfolio-overlay">
                             <span class="portfolio-cat">Motion Design</span>
                             <h3 class="portfolio-title">Interactive Campaign</h3>

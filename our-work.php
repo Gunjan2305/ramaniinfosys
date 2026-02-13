@@ -51,7 +51,7 @@
             <!-- Project 1 -->
             <div class="work-card">
                 <div class="work-media">
-                    <img src="assets/img/success-brand -1.jpeg" alt="Global Retail Platform">
+                    <img src="assets/img/brand_success_story_main.svg" alt="Global Retail Platform">
                 </div>
                 <div class="work-overlay">
                     <div class="work-info">
@@ -70,7 +70,7 @@
             <!-- Project 2 -->
             <div class="work-card">
                 <div class="work-media">
-                    <img src="assets/img/success-brand -2.jpeg" alt="Secure Banking App">
+                    <img src="assets/img/brand_success_story_fintech.svg" alt="Secure Banking App">
                 </div>
                 <div class="work-overlay">
                     <div class="work-info">
@@ -89,7 +89,7 @@
             <!-- Project 3 -->
             <div class="work-card">
                 <div class="work-media">
-                    <img src="assets/img/success-brand-3.jpeg" alt="Patient Care System">
+                    <img src="assets/img/brand_success_story_healthcare.svg" alt="Patient Care System">
                 </div>
                 <div class="work-overlay">
                     <div class="work-info">
@@ -108,7 +108,7 @@
             <!-- Project 4 (Duplicate/Variation) -->
             <div class="work-card">
                 <div class="work-media">
-                    <img src="assets/img/image2.webp" alt="Lifestyle Brand">
+                    <img src="assets/img/brand_success_story_luxury.svg" alt="Lifestyle Brand">
                 </div>
                 <div class="work-overlay">
                     <div class="work-info">
@@ -127,7 +127,7 @@
             <!-- Project 5 -->
             <div class="work-card">
                 <div class="work-media">
-                    <img src="assets/img/image-1.webp" alt="SaaS Dashboard">
+                    <img src="assets/img/brand_success_story_analytics.svg" alt="SaaS Dashboard">
                 </div>
                 <div class="work-overlay">
                     <div class="work-info">
@@ -146,9 +146,8 @@
             <!-- Project 6 -->
             <div class="work-card">
                 <div class="work-media">
-                    <video autoplay muted loop playsinline>
-                        <source src="assets/video/banner-video.mp4" type="video/mp4">
-                    </video>
+                    <img src="assets/img/brand_success_story_immersive.svg" alt="Immersive Campaign"
+                        style="width: 100%; height: 100%; object-fit: cover;">
                 </div>
                 <div class="work-overlay">
                     <div class="work-info">

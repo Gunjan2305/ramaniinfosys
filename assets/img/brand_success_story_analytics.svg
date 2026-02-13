@@ -1,0 +1,84 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradientAnalytics" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0b0c10;stop-opacity:1" /> <!-- Oxford Blue -->
+      <stop offset="100%" style="stop-color:#1f2833;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="cardGradientSaaS" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e2025;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2a2f38;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="neonCyan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#45a29e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#66fcf1;stop-opacity:1" />
+    </linearGradient>
+     <filter id="shadowSaaS" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="10" flood-color="#66fcf1" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="url(#bgGradientAnalytics)" />
+
+  <!-- Code Syntax Highlighting in BG -->
+  <text x="50" y="50" font-family="'Courier New', monospace" font-size="20" fill="#45a29e" opacity="0.1">const analytics = Data.fetch();</text>
+  <text x="50" y="80" font-family="'Courier New', monospace" font-size="20" fill="#66fcf1" opacity="0.1">visualize(analytics.metrics);</text>
+
+  <!-- Main SaaS Dashboard -->
+  <g transform="translate(100, 100)" filter="url(#shadowSaaS)">
+    <rect width="1000" height="600" rx="12" ry="12" fill="url(#cardGradientSaaS)" stroke="#45a29e" stroke-width="1"/>
+    
+    <!-- Sidebar -->
+    <rect x="0" y="0" width="80" height="600" rx="12" fill="#15171e"/>
+    <!-- Icons -->
+    <rect x="25" y="40" width="30" height="30" rx="5" fill="#66fcf1"/>
+    <circle cx="40" cy="120" r="10" fill="#45a29e"/>
+    <circle cx="40" cy="180" r="10" fill="#888"/>
+    <circle cx="40" cy="240" r="10" fill="#888"/>
+    <circle cx="40" cy="540" r="10" fill="#ff5f56"/> <!-- Settings/Logout -->
+
+    <!-- Main Content -->
+    <g transform="translate(100, 30)">
+        
+        <!-- Header -->
+        <text x="0" y="30" font-family="'Arial', sans-serif" font-size="24" fill="#fff" font-weight="bold">Platform Overview</text>
+        <rect x="700" y="10" width="180" height="40" rx="20" fill="#2a2f38" stroke="#444"/>
+        <text x="730" y="35" font-family="'Arial', sans-serif" font-size="14" fill="#aaa">Last 30 Days ▼</text>
+
+        <!-- KPI Cards -->
+        <g transform="translate(0, 80)">
+             <!-- KPI 1 -->
+             <rect width="250" height="120" rx="8" fill="#1f2329"/>
+             <text x="20" y="30" font-family="'Arial', sans-serif" font-size="12" fill="#45a29e">ACTIVE SUBSCRIPTIONS</text>
+             <text x="20" y="70" font-family="'Arial', sans-serif" font-size="32" fill="#fff" font-weight="bold">1,420</text>
+             <text x="20" y="100" font-family="'Arial', sans-serif" font-size="12" fill="#66fcf1">▲ 15% growth</text>
+             
+             <!-- KPI 2 -->
+             <rect x="280" width="250" height="120" rx="8" fill="#1f2329"/>
+             <text x="300" y="30" font-family="'Arial', sans-serif" font-size="12" fill="#45a29e">MRR</text>
+             <text x="300" y="70" font-family="'Arial', sans-serif" font-size="32" fill="#fff" font-weight="bold">$45,800</text>
+             <text x="300" y="100" font-family="'Arial', sans-serif" font-size="12" fill="#66fcf1">▲ 8% month-over-month</text>
+             
+             <!-- KPI 3 -->
+             <rect x="560" width="250" height="120" rx="8" fill="#1f2329"/>
+             <text x="580" y="30" font-family="'Arial', sans-serif" font-size="12" fill="#45a29e">CHURN RATE</text>
+             <text x="580" y="70" font-family="'Arial', sans-serif" font-size="32" fill="#fff" font-weight="bold">1.2%</text>
+             <text x="580" y="100" font-family="'Arial', sans-serif" font-size="12" fill="#ff5f56">▼ Down from 1.5%</text>
+        </g>
+
+        <!-- Complex Graph Area -->
+        <g transform="translate(0, 250)">
+            <rect width="810" height="280" rx="8" fill="#1f2329"/>
+            <!-- Grid -->
+            <line x1="0" y1="280" x2="810" y2="280" stroke="#333" stroke-width="1"/>
+            <line x1="0" y1="210" x2="810" y2="210" stroke="#333" stroke-width="1"/>
+            <line x1="0" y1="140" x2="810" y2="140" stroke="#333" stroke-width="1"/>
+            <!-- Data Lines -->
+            <path d="M0 200 L 100 230 L 200 150 L 300 180 L 400 100 L 500 120 L 600 50 L 700 80 L 810 20" 
+                  fill="none" stroke="#66fcf1" stroke-width="3"/>
+            <path d="M0 250 L 100 240 L 200 200 L 300 220 L 400 180 L 500 190 L 600 150 L 700 160 L 810 120" 
+                  fill="none" stroke="#45a29e" stroke-width="2" stroke-dasharray="5,5"/>
+        </g>
+    </g>
+  </g>
+</svg>

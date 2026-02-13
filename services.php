@@ -204,7 +204,8 @@
                         </div>
                         <div class="drawer-visual">
                             <div class="visual-collage-container">
-                                <img src="assets/img/success-brand -2.jpeg" class="vc-main-img" alt=".NET Main">
+                                <img src="assets/img/brand_success_story_fintech.svg" class="vc-main-img"
+                                    alt=".NET Main">
                             </div>
                         </div>
                         <div class="drawer-features">
@@ -236,7 +237,8 @@
                         </div>
                         <div class="drawer-visual">
                             <div class="visual-collage-container">
-                                <img src="assets/img/success-brand -1.jpeg" class="vc-main-img" alt="Angular Visual">
+                                <img src="assets/img/brand_success_story_main.svg" class="vc-main-img"
+                                    alt="Angular Visual">
                             </div>
                         </div>
                         <div class="drawer-features">

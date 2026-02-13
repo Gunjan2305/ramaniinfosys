@@ -171,7 +171,7 @@
                 <!-- Slide 1 (Video) -->
                 <div class="swiper-slide case-card">
                     <div class="case-media">
-                        <img src="assets/img/success-brand -1.jpeg" alt="Case Study 2">
+                        <img src="assets/img/brand_success_story_main.svg" alt="Case Study 2">
                         <div class="case-overlay">
                             <div class="case-info">
                                 <div class="case-tags">
@@ -189,7 +189,7 @@
                 <!-- Slide 2 (Image) -->
                 <div class="swiper-slide case-card">
                     <div class="case-media">
-                        <img src="assets/img/success-brand -2.jpeg" alt="Case Study 2">
+                        <img src="assets/img/brand_success_story_fintech.svg" alt="Case Study 2">
                         <div class="case-overlay">
                             <div class="case-info">
                                 <div class="case-tags">
@@ -206,7 +206,7 @@
                 <!-- Slide 3 (Image) -->
                 <div class="swiper-slide case-card">
                     <div class="case-media">
-                        <img src="assets/img/success-brand-3.jpeg" alt="Case Study 3">
+                        <img src="assets/img/brand_success_story_healthcare.svg" alt="Case Study 3">
                         <div class="case-overlay">
                             <div class="case-info">
                                 <div class="case-tags">
@@ -223,9 +223,7 @@
                 <!-- Slide 1 Copy -->
                 <div class="swiper-slide case-card">
                     <div class="case-media">
-                        <video autoplay muted loop playsinline>
-                            <source src="assets/video/banner-video.mp4" type="video/mp4">
-                        </video>
+                        <img src="assets/img/brand_success_story_immersive.svg" alt="Immersive Campaign">
                         <div class="case-overlay">
                             <div class="case-info">
                                 <div class="case-tags">
@@ -242,7 +240,7 @@
                 <!-- Slide 2 Copy -->
                 <div class="swiper-slide case-card">
                     <div class="case-media">
-                        <img src="assets/img/image2.webp" alt="Case Study 2">
+                        <img src="assets/img/brand_success_story_luxury.svg" alt="Case Study 2">
                         <div class="case-overlay">
                             <div class="case-info">
                                 <div class="case-tags">
@@ -260,7 +258,7 @@
                 <!-- Slide 3 Copy -->
                 <div class="swiper-slide case-card">
                     <div class="case-media">
-                        <img src="assets/img/image-1.webp" alt="Case Study 3">
+                        <img src="assets/img/brand_success_story_analytics.svg" alt="Case Study 3">
                         <div class="case-overlay">
                             <div class="case-info">
                                 <div class="case-tags">
@@ -303,9 +301,11 @@
                         </div>
                         <div class="drawer-visual">
                             <div class="visual-collage-container">
-                                <img src="assets/img/image2.webp" class="vc-main-img" alt="Main Visual">
-                                <img src="assets/img/success-brand -1.jpeg" class="vc-small-img-1" alt="Small 1">
-                                <img src="assets/img/success-brand -2.jpeg" class="vc-small-img-2" alt="Small 2">
+                                <img src="assets/img/brand_success_story_luxury.svg" class="vc-main-img"
+                                    alt="Main Visual">
+                                <img src="assets/img/brand_success_story_main.svg" class="vc-small-img-1" alt="Small 1">
+                                <img src="assets/img/brand_success_story_fintech.svg" class="vc-small-img-2"
+                                    alt="Small 2">
                             </div>
                         </div>
                         <div class="drawer-features">
@@ -336,9 +336,12 @@
                         </div>
                         <div class="drawer-visual">
                             <div class="visual-collage-container">
-                                <img src="assets/img/image-1.webp" class="vc-main-img" alt="Main Visual">
-                                <img src="assets/img/success-brand-3.jpeg" class="vc-small-img-1" alt="Small 1">
-                                <img src="assets/img/image2.webp" class="vc-small-img-2" alt="Small 2">
+                                <img src="assets/img/brand_success_story_analytics.svg" class="vc-main-img"
+                                    alt="Main Visual">
+                                <img src="assets/img/brand_success_story_healthcare.svg" class="vc-small-img-1"
+                                    alt="Small 1">
+                                <img src="assets/img/brand_success_story_luxury.svg" class="vc-small-img-2"
+                                    alt="Small 2">
                             </div>
                         </div>
                         <div class="drawer-features">
@@ -368,8 +371,10 @@
                         </div>
                         <div class="drawer-visual">
                             <div class="visual-collage-container">
-                                <img src="assets/img/success-brand -1.jpeg" class="vc-main-img" alt="Main Visual">
-                                <img src="assets/img/success-brand -2.jpeg" class="vc-small-img-1" alt="Small 1">
+                                <img src="assets/img/brand_success_story_main.svg" class="vc-main-img"
+                                    alt="Main Visual">
+                                <img src="assets/img/brand_success_story_fintech.svg" class="vc-small-img-1"
+                                    alt="Small 1">
                             </div>
                         </div>
                         <div class="drawer-features">

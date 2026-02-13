@@ -43,14 +43,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <title>Admin Login - Ramani Infosys</title>
     <link rel="icon" type="image/jpeg" href="../assets/img/favicon.jpeg">
     <link rel="shortcut icon" type="image/jpeg" href="../assets/img/favicon.jpeg">
-    
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
+
     <!-- Main Style -->
-    <link rel="stylesheet" href="../assets/css/style2.css">
+    <link rel="stylesheet" href="../assets/css/style3.css">
 
     <style>
         body {
@@ -101,7 +101,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             font-weight: 700;
             line-height: 1.2;
         }
-        
+
         .login-container h2 span {
             background: linear-gradient(90deg, #00BFFF, #8A2BE2);
             -webkit-background-clip: text;
@@ -185,12 +185,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         .back-link:hover {
             color: #00BFFF;
         }
-        
+
         .default-creds {
-             text-align:center; 
-             font-size: 0.8rem; 
-             color:#555; 
-             margin-top:1.5rem;
+            text-align: center;
+            font-size: 0.8rem;
+            color: #555;
+            margin-top: 1.5rem;
         }
     </style>
 </head>

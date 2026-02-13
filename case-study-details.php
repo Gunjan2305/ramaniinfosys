@@ -102,7 +102,7 @@ if (!$study) {
     <title>
         <?php echo $study['title']; ?> - Case Study
     </title>
-    <link rel="stylesheet" href="assets/css/style2.css">
+    <link rel="stylesheet" href="assets/css/style3.css">
 
 
     <link rel="icon" type="image/jpeg" href="assets/img/favicon.jpeg">

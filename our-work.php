@@ -12,7 +12,7 @@
     <!-- Canonical Tag -->
     <link rel="canonical" href="https://ramaniinfosys.com/our-work" />
 
-    <link rel="stylesheet" href="assets/css/style2.css">
+    <link rel="stylesheet" href="assets/css/style3.css">
 
     <link rel="icon" type="image/jpeg" href="assets/img/favicon.jpeg">
     <link rel="shortcut icon" type="image/jpeg" href="assets/img/favicon.jpeg">

@@ -121,108 +121,108 @@
     <?php include 'includes/footer.php'; ?>
 
     <script>
-        // Force page to start at the top on reload
-        if (history.scrollRestoration) {
-            history.scrollRestoration = 'manual';
-        } else {
-            window.onbeforeunload = function () {
-                window.scrollTo(0, 0);
+        document.addEventListener('DOMContentLoaded', function() {
+            // Force page to start at the top on reload
+            if (history.scrollRestoration) {
+                history.scrollRestoration = 'manual';
+            } else {
+                window.onbeforeunload = function () {
+                    window.scrollTo(0, 0);
+                }
             }
-        }
-        window.onload = function () {
+            // window.onload inside DOMContentLoaded is redundant, but harmless if kept simpler
             window.scrollTo(0, 0);
-        }
 
-        // Mobile Menu Logic
-        const mobileBtn = document.querySelector('.mobile-menu-btn');
-        const mobileDrawer = document.querySelector('.mobile-nav-drawer');
-        const mobileOverlay = document.querySelector('.mobile-nav-overlay');
+            // Mobile Menu Logic
+            const mobileBtn = document.querySelector('.mobile-menu-btn');
+            const mobileDrawer = document.querySelector('.mobile-nav-drawer');
+            const mobileOverlay = document.querySelector('.mobile-nav-overlay');
 
-        if (mobileBtn) {
-            mobileBtn.addEventListener('click', () => {
-                mobileBtn.classList.toggle('active');
-                mobileDrawer.classList.toggle('active');
-                mobileOverlay.classList.toggle('active');
-                document.body.style.overflow = mobileDrawer.classList.contains('active') ? 'hidden' : ''; // Prevent background scroll
-            });
-        }
-
-        if (mobileOverlay) {
-            mobileOverlay.addEventListener('click', () => {
-                mobileBtn.classList.remove('active');
-                mobileDrawer.classList.remove('active');
-                mobileOverlay.classList.remove('active');
-                document.body.style.overflow = '';
-            });
-        }
-
-
-        // Filter Logic
-        const filterBtns = document.querySelectorAll('.filter-btn');
-        const items = document.querySelectorAll('.portfolio-item');
-        const sliderGrid = document.querySelector('.portfolio-grid');
-
-        filterBtns.forEach(btn => {
-            btn.addEventListener('click', () => {
-                // Active class
-                filterBtns.forEach(b => b.classList.remove('active'));
-                btn.classList.add('active');
-
-                const filter = btn.getAttribute('data-filter');
-
-                items.forEach(item => {
-                    // Check if 'all' or matches category
-                    // Note: original code checked `item.getAttribute('data-category') === filter`.
-                    // But wait, the loop below inside the original code was:
-                    // if (filter === 'all' || item.getAttribute('data-category') === filter) { ... }
-                    // However, we need to iterate over items. Let's fix the logic to match the original intent properly.
-
-                    if (filter === 'all' || item.getAttribute('data-category') === filter) {
-                        item.style.display = 'block';
-                        // Add fade in animation if desired
-                        item.style.opacity = '0';
-                        setTimeout(() => item.style.opacity = '1', 50);
-                    } else {
-                        item.style.display = 'none';
-                    }
+            if (mobileBtn && mobileDrawer && mobileOverlay) {
+                mobileBtn.addEventListener('click', () => {
+                    mobileBtn.classList.toggle('active');
+                    mobileDrawer.classList.toggle('active');
+                    mobileOverlay.classList.toggle('active');
+                    document.body.style.overflow = mobileDrawer.classList.contains('active') ? 'hidden' : '';
                 });
 
-                // Reset scroll position when filtering
-                if (sliderGrid) {
-                    sliderGrid.scrollTo({
-                        left: 0,
+                mobileOverlay.addEventListener('click', () => {
+                    mobileBtn.classList.remove('active');
+                    mobileDrawer.classList.remove('active');
+                    mobileOverlay.classList.remove('active');
+                    document.body.style.overflow = '';
+                });
+            }
+
+            // Filter Logic
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const items = document.querySelectorAll('.portfolio-item');
+            const sliderGrid = document.querySelector('.portfolio-grid');
+
+            if (filterBtns.length > 0 && items.length > 0) {
+                filterBtns.forEach(btn => {
+                    btn.addEventListener('click', (e) => {
+                        e.preventDefault(); // Good practice
+
+                        // Active class
+                        filterBtns.forEach(b => b.classList.remove('active'));
+                        btn.classList.add('active');
+
+                        const filter = btn.getAttribute('data-filter').toLowerCase().trim();
+
+                        items.forEach(item => {
+                            const category = item.getAttribute('data-category').toLowerCase().trim();
+                            
+                            if (filter === 'all' || category === filter) {
+                                item.style.display = 'block';
+                                // Slight delay to allow display:block to apply before opacity transition
+                                requestAnimationFrame(() => {
+                                    item.style.opacity = '1';
+                                });
+                            } else {
+                                item.style.opacity = '0';
+                                setTimeout(() => {
+                                    if (item.style.opacity === '0') {
+                                        item.style.display = 'none';
+                                    }
+                                }, 300); // Match transition duration
+                            }
+                        });
+
+
+                        // Reset scroll position when filtering
+                        if (sliderGrid) {
+                             sliderGrid.scrollTo({
+                                left: 0,
+                                behavior: 'smooth'
+                            });
+                        }
+                    });
+                });
+            }
+
+            // Slider Navigation Logic
+            const prevBtn = document.querySelector('.slider-nav.prev');
+            const nextBtn = document.querySelector('.slider-nav.next');
+
+            if (sliderGrid && prevBtn && nextBtn) {
+                nextBtn.addEventListener('click', () => {
+                    const scrollAmount = 400 + 30; // Item width + gap
+                    sliderGrid.scrollBy({
+                        left: scrollAmount,
                         behavior: 'smooth'
                     });
-                }
-            });
-        });
-
-        // Add opacity transition to items for filter effect
-        items.forEach(item => {
-            item.style.transition = 'opacity 0.3s ease';
-        });
-
-        // Slider Navigation Logic
-        const prevBtn = document.querySelector('.slider-nav.prev');
-        const nextBtn = document.querySelector('.slider-nav.next');
-
-        if (sliderGrid && prevBtn && nextBtn) {
-            nextBtn.addEventListener('click', () => {
-                const scrollAmount = 400 + 30; // Item width + gap
-                sliderGrid.scrollBy({
-                    left: scrollAmount,
-                    behavior: 'smooth'
                 });
-            });
 
-            prevBtn.addEventListener('click', () => {
-                const scrollAmount = 400 + 30; // Item width + gap
-                sliderGrid.scrollBy({
-                    left: -scrollAmount,
-                    behavior: 'smooth'
+                prevBtn.addEventListener('click', () => {
+                    const scrollAmount = 400 + 30; // Item width + gap
+                    sliderGrid.scrollBy({
+                         left: -scrollAmount,
+                        behavior: 'smooth'
+                    });
                 });
-            });
-        }
+            }
+        });
     </script>
     <!-- Audit Modal Logic -->
     <script src="assets/js/audit-modal.js"></script>

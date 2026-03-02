@@ -36,7 +36,7 @@
                         <path fill="#138808" d="M0 320h640v160H0z" />
                         <circle cx="320" cy="240" r="60" fill="none" stroke="#000088" stroke-width="10" />
                     </svg>
-                    <span>A-306, RJD Business Hub, Katargam, Surat, 395004</span>
+                    <span>270 AR Mall, Opp. Panvel Point, Mota Varachha, Surat, Gujarat 395006</span>
                 </div>
 
                 <!-- Phone -->

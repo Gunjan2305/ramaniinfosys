@@ -17,7 +17,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     // Email content
-    $recipient = "hello@ramaniinfosys.com";
+    $recipient = "hr.ramaniinfosys@gmail.com";
     $subject = "New Contact Inquiry from $fullName";
 
     $email_content = "Name: $fullName\n";

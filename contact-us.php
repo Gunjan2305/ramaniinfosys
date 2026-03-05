@@ -30,8 +30,8 @@
         "@type": "LocalBusiness",
         "name": "Ramani Infosys",
         "image": "https://ramaniinfosys.com/assets/img/logo.jpeg",
-        "telephone": "+91-9998579403",
-        "email": "hello@ramaniinfosys.com",
+        "telephone": "+91-8320828581",
+        "email": "hr.ramaniinfosys@gmail.com",
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "A-306, RJD Business Hub, Katargam",

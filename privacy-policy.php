@@ -165,9 +165,9 @@
             <strong>Ramani Infosys</strong><br>
             A-306, RJD Business Hub, Katargam,<br>
             Surat, 395004<br>
-            Email: <a href="mailto:hello@ramaniinfosys.com"
-                style="color: #00c6ff; text-decoration: none;">hello@ramaniinfosys.com</a><br>
-            Phone: +91 9998579403
+            Email: <a href="mailto:hr.ramaniinfosys@gmail.com"
+                style="color: #00c6ff; text-decoration: none;">hr.ramaniinfosys@gmail.com</a><br>
+            Phone: +91 8320828581
         </p>
     </div>
 

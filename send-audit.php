@@ -16,7 +16,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     // Email content
-    $recipient = "hello@ramaniinfosys.com";
+    $recipient = "hr.ramaniinfosys@gmail.com";
     $subject = "New Free Audit Request from $name";
 
     $email_content = "Name: $name\n";

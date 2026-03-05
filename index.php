@@ -33,7 +33,7 @@
       "logo": "https://ramaniinfosys.com/assets/img/logo.jpeg",
       "contactPoint": {
         "@type": "ContactPoint",
-        "telephone": "+91-9998579403",
+        "telephone": "+91-8320828581",
         "contactType": "customer service"
       },
       "sameAs": [
